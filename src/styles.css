@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  html{
+    @apply scroll-smooth
+  }
+
+  body{
+    @apply font-inter text-brand-blue-100 bg-brand-gray;
+  }
+}
+
+.video-line{
+  @apply after:hidden md:after:block after:absolute after:-bottom-8 after:h-6 after:-left-0.5 after:w-px after:bg-brand-blue-200/30  before:hidden md:before:block before:absolute before:bottom-0 before:-left-8 before:w-6 before:h-px before:bg-brand-blue-200/30
+}
+
+.services-pagination-bullet {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 2.5rem;
+  transition: 0.5 color;
+}
+
+.services-pagination-bullet:hover {
+  color: #EA5B0C;
+}
+
+.services-pagination-bullet-active {
+  display: inline-block;
+  font-weight: 500;
+  color: #EA5B0C;
+}
+
+
+
+.accordion-item-body {
+  transition: max-height 0.3s ease-out;
+}
+.accordion-item-header.active > .icon {
+  transform: rotate(180deg);
+}
+
+.accordion-item-header.active > .icon{
+  transform: rotate(180deg);
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .services-pagination-bullet {
+    display: none;
+    margin-right: 1rem;
+  }
+
+  .services-pagination-bullet-active {
+    display: inline-block;
+  }
+}
