@@ -7,26 +7,6 @@ document.querySelectorAll('.toggleMenu').forEach((btn)=>{
 })
 
 
-
-const services = new Swiper(".services", {
-    slidesPerView: 1,
-    // loop: true,
-    pagination: {
-      el: ".services-pagination",
-      clickable: true,
-      bulletClass: 'services-pagination-bullet',
-      bulletActiveClass: 'services-pagination-bullet-active',
-      renderBullet: function (index, className) {
-      return `<span class="${className}">${this.slides[index].querySelector('h3').textContent}</span>`;
-  }
-    },
-    navigation: {
-      nextEl: ".services-next",
-      prevEl: ".services-prev",
-    },
-  });
-
-
   const itemHeaders = document.querySelectorAll(".accordion-item-header");
 
   itemHeaders.forEach((accordion) => {
@@ -48,4 +28,35 @@ const services = new Swiper(".services", {
         accordionItemBody.style.maxHeight = 0;
       }
     }
+  });
+
+
+
+  const services = new Swiper(".services", {
+    slidesPerView: 1,
+    // loop: true,
+    pagination: {
+      el: ".services-pagination",
+      clickable: true,
+      bulletClass: 'services-pagination-bullet',
+      bulletActiveClass: 'services-pagination-bullet-active',
+      renderBullet: function (index, className) {
+      return `<span class="${className}">${this.slides[index].querySelector('h3').textContent}</span>`;
+  }
+    },
+    navigation: {
+      nextEl: ".services-next",
+      prevEl: ".services-prev",
+    },
+  });
+
+
+
+  const picture = new Swiper(".picture", {
+    slidesPerView: 1,
+    spaceBetween: 80,
+    navigation: {
+      nextEl: ".picture-next",
+      prevEl: ".picture-prev",
+    },
   });

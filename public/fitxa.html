@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Matrix || Fitxa</title>
+</head>
+<body>
+  <header class="relative z-10">
+    <nav class="max-w-xxl mx-auto flex items-center justify-between p-6 lg:px-4 xl:pt-8 gap-6 xl:gap-10">
+      <a href="#" class="w-32 xl:w-auto lg:pb-4">
+        <img src="./img/logo.svg" alt="logo">
+      </a>
+      <button type="button" class="lg:hidden toggleMenu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 12H23" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M1 19H23" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M1 5H23" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>          
+      </button>
+      <div class="hidden lg:flex items-center gap-3.5 xl:gap-6">
+        <div class="group relative cursor-pointer pb-4">
+          <div class="relative flex items-center text-base/5 xl:text-display-sm space-x-1.5 z-10">
+            <span>Qui som</span>
+            <svg class="group-hover:rotate-180 transition-transform" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.35292 10.5752L5.39043 10.625H5.45274H6.54726H6.79735L6.64724 10.425L2.14476 4.42497L2.10726 4.375H2.04478L1 4.375H0.875L0.875 4.5V4.59354V4.63538L0.900186 4.66879L5.35292 10.5752ZM9.95522 4.375H9.89301L9.8555 4.42464L6.79579 8.47364L6.73951 8.54812L6.79496 8.62324L7.36709 9.39829L7.46709 9.53375L7.56782 9.39884L11.1002 4.66833L11.125 4.63506V4.59354V4.5V4.375H11L9.95522 4.375Z" fill="#EA5B0C" stroke="#EA5B0C" stroke-width="0.25"/>
+              </svg>
+          </div>
+          <div class="absolute top-9 left-0 w-56 bg-white px-6 pt-8 pb-10 hidden group-hover:block mt-1">
+            <svg class="absolute bottom-full left-0" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0L16 16H0V0Z" fill="white"/>
+            </svg>              
+            <div class="group/child flex flex-col items-start space-y-3">
+              <a href="#" class="hover:font-medium transition-all">Quant a Matrix</a>
+              <a href="#" class="hover:font-medium transition-all">Equip</a>
+              <a href="#" class="hover:font-medium transition-all">Qualitat i medi ambient</a>
+            </div>
+          </div>
+        </div>
+        <a href="#motlles" class="flex items-center text-base/5 xl:text-display-sm space-x-1.5 pb-4">
+          <span>Motlles d'injecció</span>
+          <svg class="group-hover:rotate-180 transition-transform" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.35292 10.5752L5.39043 10.625H5.45274H6.54726H6.79735L6.64724 10.425L2.14476 4.42497L2.10726 4.375H2.04478L1 4.375H0.875L0.875 4.5V4.59354V4.63538L0.900186 4.66879L5.35292 10.5752ZM9.95522 4.375H9.89301L9.8555 4.42464L6.79579 8.47364L6.73951 8.54812L6.79496 8.62324L7.36709 9.39829L7.46709 9.53375L7.56782 9.39884L11.1002 4.66833L11.125 4.63506V4.59354V4.5V4.375H11L9.95522 4.375Z" fill="#EA5B0C" stroke="#EA5B0C" stroke-width="0.25"/>
+            </svg>
+        </a>
+        <a href="#" class="text-base/5 xl:text-display-sm pb-4">Instal·lacions</a>
+        <a href="#services" class="flex items-center text-base/5 xl:text-display-sm space-x-1.5 pb-4">
+          <span>Serveis</span>
+          <svg class="group-hover:rotate-180 transition-transform" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.35292 10.5752L5.39043 10.625H5.45274H6.54726H6.79735L6.64724 10.425L2.14476 4.42497L2.10726 4.375H2.04478L1 4.375H0.875L0.875 4.5V4.59354V4.63538L0.900186 4.66879L5.35292 10.5752ZM9.95522 4.375H9.89301L9.8555 4.42464L6.79579 8.47364L6.73951 8.54812L6.79496 8.62324L7.36709 9.39829L7.46709 9.53375L7.56782 9.39884L11.1002 4.66833L11.125 4.63506V4.59354V4.5V4.375H11L9.95522 4.375Z" fill="#EA5B0C" stroke="#EA5B0C" stroke-width="0.25"/>
+            </svg>
+        </a>
+        <a href="#" class="flex items-center text-base/5 xl:text-display-sm space-x-1.5 pb-4">
+          <span>Recursos</span>
+          <svg class="group-hover:rotate-180 transition-transform" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.35292 10.5752L5.39043 10.625H5.45274H6.54726H6.79735L6.64724 10.425L2.14476 4.42497L2.10726 4.375H2.04478L1 4.375H0.875L0.875 4.5V4.59354V4.63538L0.900186 4.66879L5.35292 10.5752ZM9.95522 4.375H9.89301L9.8555 4.42464L6.79579 8.47364L6.73951 8.54812L6.79496 8.62324L7.36709 9.39829L7.46709 9.53375L7.56782 9.39884L11.1002 4.66833L11.125 4.63506V4.59354V4.5V4.375H11L9.95522 4.375Z" fill="#EA5B0C" stroke="#EA5B0C" stroke-width="0.25"/>
+            </svg>
+        </a>
+        <a href="#" class="flex items-center text-base/5 xl:text-display-sm space-x-1.5 pb-4">
+          <span>Feina</span>
+          <svg class="group-hover:rotate-180 transition-transform" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.35292 10.5752L5.39043 10.625H5.45274H6.54726H6.79735L6.64724 10.425L2.14476 4.42497L2.10726 4.375H2.04478L1 4.375H0.875L0.875 4.5V4.59354V4.63538L0.900186 4.66879L5.35292 10.5752ZM9.95522 4.375H9.89301L9.8555 4.42464L6.79579 8.47364L6.73951 8.54812L6.79496 8.62324L7.36709 9.39829L7.46709 9.53375L7.56782 9.39884L11.1002 4.66833L11.125 4.63506V4.59354V4.5V4.375H11L9.95522 4.375Z" fill="#EA5B0C" stroke="#EA5B0C" stroke-width="0.25"/>
+            </svg>
+        </a>
+        <a href="#" class="text-base/5 xl:text-display-sm pb-4">On som</a>
+        <div href="#" class="group relative cursor-pointer uppercase pb-4 xl:ml-10 z-10">
+          <div class="flex items-center text-base/5 xl:text-display-sm space-x-1.5">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.59961 9H20.3996M3.59961 15H20.3996M11.4997 3C9.81501 5.69961 8.92188 8.81787 8.92188 12C8.92188 15.1821 9.81501 18.3004 11.4997 21M12.5 3C14.1847 5.69961 15.0778 8.81787 15.0778 12C15.0778 15.1821 14.1847 18.3004 12.5 21M3 12C3 13.1819 3.23279 14.3522 3.68508 15.4442C4.13738 16.5361 4.80031 17.5282 5.63604 18.364C6.47177 19.1997 7.46392 19.8626 8.55585 20.3149C9.64778 20.7672 10.8181 21 12 21C13.1819 21 14.3522 20.7672 15.4442 20.3149C16.5361 19.8626 17.5282 19.1997 18.364 18.364C19.1997 17.5282 19.8626 16.5361 20.3149 15.4442C20.7672 14.3522 21 13.1819 21 12C21 9.61305 20.0518 7.32387 18.364 5.63604C16.6761 3.94821 14.3869 3 12 3C9.61305 3 7.32387 3.94821 5.63604 5.63604C3.94821 7.32387 3 9.61305 3 12Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>              
+            <span>Cat</span>
+            <svg class="group-hover:rotate-180 transition-transform" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.35292 10.5752L5.39043 10.625H5.45274H6.54726H6.79735L6.64724 10.425L2.14476 4.42497L2.10726 4.375H2.04478L1 4.375H0.875L0.875 4.5V4.59354V4.63538L0.900186 4.66879L5.35292 10.5752ZM9.95522 4.375H9.89301L9.8555 4.42464L6.79579 8.47364L6.73951 8.54812L6.79496 8.62324L7.36709 9.39829L7.46709 9.53375L7.56782 9.39884L11.1002 4.66833L11.125 4.63506V4.59354V4.5V4.375H11L9.95522 4.375Z" fill="#EA5B0C" stroke="#EA5B0C" stroke-width="0.25"/>
+              </svg>
+          </div>
+          <div class="absolute top-9 right-0 w-20 bg-white px-6 pt-8 pb-10 hidden group-hover:block mt-1">
+            <svg class="absolute bottom-full right-0" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 0L0 16H16V0Z" fill="white"/>
+              </svg>
+                            
+            <div class="group/child flex flex-col items-start space-y-3">
+              <button type="button" class="hover:font-medium transition-all">CAT</button>
+              <button type="button" class="hover:font-medium transition-all">ESP</button>
+              <button type="button" class="hover:font-medium transition-all">FR</button>
+              <button type="button" class="hover:font-medium transition-all">EN</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- mobile -->
+     <div class="menu fixed top-0 left-0 w-full h-screen bg-brand-gray-10 -translate-x-full transition-transform duration-500 p-6 z-40">
+        <div class="flex items-center justify-between">
+          <a href="#" class="w-32 xl:w-auto lg:pb-4">
+            <img src="./img/logo.svg" alt="logo">
+          </a>
+          <!-- close btn -->
+          <button type="button" class="toggleMenu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.05011 3.05005L20.9498 20.95" stroke="#1A1A1A" stroke-width="1.5042" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3.05011 20.95L20.9498 3.04995" stroke="#1A1A1A" stroke-width="1.5042" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                     
+          </button>
+          
+        </div>
+
+        <div class="mt-11">
+          <div class="accordion-item">
+            <button type="button" class="accordion-item-header w-full flex items-center space-x-1.5 pb-2">
+              <h3 class="font-medium text-xl/6 text-brand-black-200">Qui som</h3>
+              <svg class="icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.35292 10.0752L5.39043 10.125H5.45274H6.54726H6.79735L6.64724 9.92497L2.14476 3.92497L2.10726 3.875H2.04478L1 3.875H0.875L0.875 4V4.09354V4.13538L0.900186 4.16879L5.35292 10.0752ZM9.95522 3.875H9.89301L9.8555 3.92464L6.79579 7.97364L6.73951 8.04812L6.79496 8.12324L7.36709 8.89829L7.46709 9.03375L7.56782 8.89884L11.1002 4.16833L11.125 4.13506V4.09354V4V3.875H11L9.95522 3.875Z" fill="#EA5B0C" stroke="#EA5B0C" stroke-width="0.25"/>
+              </svg>            
+            </button>
+            <div class="accordion-item-body max-h-0 overflow-hidden">
+              <div class="accordion-item-body-content flex flex-col items-start space-y-2 border-l border-brand-orange py-2 pl-4 ml-1 mb-6">
+                <a href="#">Quant a Matrix</a>
+                <a href="#">Equip</a>
+                <a href="#">Qualitat i medi ambient</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-start text-xl border-b border-brand-black-100/10 gap-2 pb-6">
+            <a href="#motlles" class="flex items-center space-x-1.5">
+              <span>Motlles d'injecció</span>
+              <svg class="group-hover:rotate-180 transition-transform" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.35292 10.5752L5.39043 10.625H5.45274H6.54726H6.79735L6.64724 10.425L2.14476 4.42497L2.10726 4.375H2.04478L1 4.375H0.875L0.875 4.5V4.59354V4.63538L0.900186 4.66879L5.35292 10.5752ZM9.95522 4.375H9.89301L9.8555 4.42464L6.79579 8.47364L6.73951 8.54812L6.79496 8.62324L7.36709 9.39829L7.46709 9.53375L7.56782 9.39884L11.1002 4.66833L11.125 4.63506V4.59354V4.5V4.375H11L9.95522 4.375Z" fill="#EA5B0C" stroke="#EA5B0C" stroke-width="0.25"/>
+                </svg>
+            </a>
+            <a href="#">Instal·lacions</a>
+            <a href="#services" class="flex items-center space-x-1.5">
+              <span>Serveis</span>
+              <svg class="group-hover:rotate-180 transition-transform" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.35292 10.5752L5.39043 10.625H5.45274H6.54726H6.79735L6.64724 10.425L2.14476 4.42497L2.10726 4.375H2.04478L1 4.375H0.875L0.875 4.5V4.59354V4.63538L0.900186 4.66879L5.35292 10.5752ZM9.95522 4.375H9.89301L9.8555 4.42464L6.79579 8.47364L6.73951 8.54812L6.79496 8.62324L7.36709 9.39829L7.46709 9.53375L7.56782 9.39884L11.1002 4.66833L11.125 4.63506V4.59354V4.5V4.375H11L9.95522 4.375Z" fill="#EA5B0C" stroke="#EA5B0C" stroke-width="0.25"/>
+                </svg>
+            </a>
+            <a href="#" class="flex items-center space-x-1.5">
+              <span>Recursos</span>
+              <svg class="group-hover:rotate-180 transition-transform" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.35292 10.5752L5.39043 10.625H5.45274H6.54726H6.79735L6.64724 10.425L2.14476 4.42497L2.10726 4.375H2.04478L1 4.375H0.875L0.875 4.5V4.59354V4.63538L0.900186 4.66879L5.35292 10.5752ZM9.95522 4.375H9.89301L9.8555 4.42464L6.79579 8.47364L6.73951 8.54812L6.79496 8.62324L7.36709 9.39829L7.46709 9.53375L7.56782 9.39884L11.1002 4.66833L11.125 4.63506V4.59354V4.5V4.375H11L9.95522 4.375Z" fill="#EA5B0C" stroke="#EA5B0C" stroke-width="0.25"/>
+                </svg>
+            </a>
+            <a href="#" class="flex items-center space-x-1.5">
+              <span>Feina</span>
+              <svg class="group-hover:rotate-180 transition-transform" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.35292 10.5752L5.39043 10.625H5.45274H6.54726H6.79735L6.64724 10.425L2.14476 4.42497L2.10726 4.375H2.04478L1 4.375H0.875L0.875 4.5V4.59354V4.63538L0.900186 4.66879L5.35292 10.5752ZM9.95522 4.375H9.89301L9.8555 4.42464L6.79579 8.47364L6.73951 8.54812L6.79496 8.62324L7.36709 9.39829L7.46709 9.53375L7.56782 9.39884L11.1002 4.66833L11.125 4.63506V4.59354V4.5V4.375H11L9.95522 4.375Z" fill="#EA5B0C" stroke="#EA5B0C" stroke-width="0.25"/>
+                </svg>
+            </a>
+            <a href="#">On som</a>
+    
+          </div>
+          <div class="accordion-item uppercase mt-6">
+            <button type="button" class="accordion-item-header w-full flex items-center space-x-1 pb-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.59961 9H20.3996M3.59961 15H20.3996M11.4997 3C9.81501 5.69961 8.92188 8.81787 8.92188 12C8.92188 15.1821 9.81501 18.3004 11.4997 21M12.5 3C14.1847 5.69961 15.0778 8.81787 15.0778 12C15.0778 15.1821 14.1847 18.3004 12.5 21M3 12C3 13.1819 3.23279 14.3522 3.68508 15.4442C4.13738 16.5361 4.80031 17.5282 5.63604 18.364C6.47177 19.1997 7.46392 19.8626 8.55585 20.3149C9.64778 20.7672 10.8181 21 12 21C13.1819 21 14.3522 20.7672 15.4442 20.3149C16.5361 19.8626 17.5282 19.1997 18.364 18.364C19.1997 17.5282 19.8626 16.5361 20.3149 15.4442C20.7672 14.3522 21 13.1819 21 12C21 9.61305 20.0518 7.32387 18.364 5.63604C16.6761 3.94821 14.3869 3 12 3C9.61305 3 7.32387 3.94821 5.63604 5.63604C3.94821 7.32387 3 9.61305 3 12Z" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                
+              <h3 class="font-medium text-xl/6 text-brand-black-200 uppercase">cat</h3>
+              <svg class="icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.35292 10.0752L5.39043 10.125H5.45274H6.54726H6.79735L6.64724 9.92497L2.14476 3.92497L2.10726 3.875H2.04478L1 3.875H0.875L0.875 4V4.09354V4.13538L0.900186 4.16879L5.35292 10.0752ZM9.95522 3.875H9.89301L9.8555 3.92464L6.79579 7.97364L6.73951 8.04812L6.79496 8.12324L7.36709 8.89829L7.46709 9.03375L7.56782 8.89884L11.1002 4.16833L11.125 4.13506V4.09354V4V3.875H11L9.95522 3.875Z" fill="#EA5B0C" stroke="#EA5B0C" stroke-width="0.25"/>
+              </svg>            
+            </button>
+            <div class="accordion-item-body max-h-0 overflow-hidden">
+              <div class="accordion-item-body-content flex flex-col items-start space-y-3 border-l border-brand-orange py-2 pl-4 ml-1 mb-6">
+                <a href="#">esp</a>
+                <a href="#">fr</a>
+                <a href="#">eng</a>
+              </div>
+            </div>
+          </div>
+       </div>
+     </div>
+  </header>
+
+  <main>
+    <section class="overflow-hidden">
+      <div class="relative max-w-xxl mx-auto pt-8 px-4 mt-14">
+          <div class="menu-border relative flex items-center font-ibm-plex-sans text-sm uppercase gap-6 py-5">
+              <div class="flex items-center space-x-1.5">
+                <span class="size-2.5 shrink-0 bg-brand-orange rounded-full"></span>
+                <a href="#">Motlles d'injecció</a>
+              </div>
+              <div class="flex items-center space-x-1.5">
+                <span class="size-2.5 shrink-0 bg-brand-orange rounded-full"></span>
+                <a href="#">FaRmacia aplicacions mèdiques</a>
+              </div>
+          </div>
+      </div>      
+    </section>
+
+    <section>
+      <div class="relative max-w-xxl mx-auto py-8 px-4">
+          <h1 class="text-display-3xl lg:text-6xl xl:text-8xl">Flip top with IMCC</h1>
+          <ul class="font-ibm-plex-sans text-brand-black-300 space-y-2 mt-20">
+            <li class="flex items-center space-x-2">
+              <span class="w-3 h-0.5 bg-brand-orange"></span>
+              <p>32 cavities</p>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="w-3 h-0.5 bg-brand-orange"></span>
+              <p>Flip Top 22 components</p>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="w-3 h-0.5 bg-brand-orange"></span>
+              <p>In mold open</p>
+            </li>
+          </ul>
+          <div class="absolute top-0 h-full left-1/2 -translate-x-1/2 w-[42.25rem] border-r border-brand-black-100/10"></div>
+
+      </div>      
+    </section>
+
+
+    <section class="overflow-hidden relative">
+      <div class="max-w-xxl mx-auto px-4 pb-28">
+        <div class="max-w-current w-full mx-auto px-4">
+          <div class="pb-28 px-8">
+            <p class="text-lg text-brand-black-300 mt-16">
+              Matrix va ser fundada pel grup S&P a Ripoll el 1974 al cor dels Pirineus. <br> <br>
+              Matrix compta amb unes instal·lacions totalment climatitzades de 4.300m2, 105,000 hores de capacitat de treball per any, dedicada al disseny i fabricació de motlles d'injecció d'alta precisió i matrius de premsa, i compta amb una plantilla de 65 treballadors. <br> <br>
+              El nostre know how i experiència en els últims <strong>40 anys</strong> ens permeten oferir als nostres clients els projectes més complexos i les solucions òptimes utilitzant la més avançada tecnologia integrada en CAD / CAM / CAE. <br> <br>
+              Oferim als nostres clients solucions completes en funció de les seves necessitats,des de la fase de disseny de la peça a les proves finals de producción dins la mateixes instal·lacions. <br> <br>
+              L'adaptació a una <strong class="inline-block border-b border-brand-orange">evolució tecnològica constant</strong> i la il·lusió dipositada en cada projecte ens ha permès assolir una posició competitiva en el mercat internacional. <br> <br>
+              El potencial més important de la nostra empresa, són les persones que fan d'ella una realitat. El treballadors reben una sòlida formació continuada dins de l'empresa, amb cursos periòdics de reciclatge. <br> <br>
+              La relació amb els nostres clients es basa en tres pilars fonamentals: servei, confidencialitat i compromís professional.
+            </p>
+          </div>
+        </div>
+        <div class="relative flex items-center justify-between font-medium text-sm md:text-base/none z-10">
+          <a href="#" class="group inline-flex items-center border border-brand-black-100/30 hover:border-brand-black-100 active:text-brand-orange transition-colors rounded-full space-x-2 px-9 lg:px-12 py-3">
+            <svg class="group-hover:-translate-x-1 transition-transform" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23 12.5H1M1 12.5L6 17.5M1 12.5L6 7.5" stroke="#EA5B0C" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>              
+            <span>Anterior producte</span>              
+          </a>
+
+          <button type="button" class="size-14">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="32" y="27.4998" width="24" height="1" fill="#0A0A0A" fill-opacity="0.3"/>
+              <rect x="27.5" y="24" width="24" height="1" transform="rotate(-90 27.5 24)" fill="#0A0A0A" fill-opacity="0.3"/>
+              <rect y="27.4998" width="24" height="1" fill="#0A0A0A" fill-opacity="0.3"/>
+              <rect x="27.5" y="56" width="24" height="1" transform="rotate(-90 27.5 56)" fill="#0A0A0A" fill-opacity="0.3"/>
+              </svg>              
+          </button>
+          <a href="#" class="group inline-flex items-center border border-brand-black-100/30 hover:border-brand-black-100 active:text-brand-orange transition-colors rounded-full space-x-2 px-9 lg:px-12 py-3">
+            <span>Següent producte</span>
+            <svg class="group-hover:translate-x-1 transition-transform" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 12H23M23 12L18 17M23 12L18 7" stroke="#EA5B0C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>              
+          </a>
+        </div>
+      </div> 
+
+      <div class="absolute top-0 h-full left-1/2 -translate-x-1/2 w-[42.25rem] border-x border-brand-black-100/10"></div>
+    </section>
+
+  </main>
+  <footer class="bg-brand-black-100 text-white">
+    <div class="max-w-xxl mx-auto grid md:grid-cols-3 gap-y-12 gap-8 px-6 md:px-4 pt-16 pb-12 lg:py-24">
+      <div class="space-y-6">
+        <a href="#" class="inline-block w-52 lg:w-auto">
+          <img src="./img//matrix_50years.svg" alt="Logo">
+        </a>
+        <div class="flex flex-col items-start text-[.9375rem] leading-6">
+          <p> Ctra. C-26, km 195 17500 Ripoll (Girona)</p>
+          <a class="hover:text-brand-orange hover:translate-x-1.5 transition-all" href="tel:972700358">T. (+34) 972 70 03 58</a>
+          <a class="hover:text-brand-orange hover:translate-x-1.5 transition-all" href="tel:972703351">F. (+34) 972 70 33 51</a>
+          <a href="mailto:info@matrix-sa.com" class="inline-block hover:text-brand-orange transition-colors border-b border-brand-orange">info@matrix-sa.com</a>
+        </div>
+      </div>
+      <div class="flex flex-col items-start text-[.9375rem]/6 lg:text-display-sm space-y-2 lg:pl-8">
+        <a class="group flex items-center hover:text-brand-orange" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden group-hover:block transition-all size-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg>          
+          <span class="group-hover:translate-x-1 transition-transform">Qui som</span>
+        </a>
+        <a class="group flex items-center hover:text-brand-orange" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden group-hover:block transition-all size-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg>          
+          <span class="group-hover:translate-x-1 transition-transform">Motlles d'injecció</span>
+        </a>
+        
+        <a class="group flex items-center hover:text-brand-orange" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden group-hover:block transition-all size-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg>          
+          <span class="group-hover:translate-x-1 transition-transform">Instal·lacions</span>
+        </a>
+        <a class="group flex items-center hover:text-brand-orange" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden group-hover:block transition-all size-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg>          
+          <span class="group-hover:translate-x-1 transition-transform">Serveis</span>
+        </a>
+        <a class="group flex items-center hover:text-brand-orange" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden group-hover:block transition-all size-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg>          
+          <span class="group-hover:translate-x-1 transition-transform">Recursos</span>
+        </a>
+        <a class="group flex items-center hover:text-brand-orange" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden group-hover:block transition-all size-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg>          
+          <span class="group-hover:translate-x-1 transition-transform">Feina</span>
+        </a>
+        <a class="group flex items-center hover:text-brand-orange" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden group-hover:block transition-all size-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg>          
+          <span class="group-hover:translate-x-1 transition-transform">On som i contacte</span>
+        </a>
+      </div>
+      <div class="space-y-3 lg:pl-8">
+        <p class="font-medium">Segueix-nos:</p>
+        <!-- social media -->
+        <div class="flex items-center space-x-2">
+          <!-- instagram -->
+          <a href="#" class="size-14 lg:size-16 grid place-items-center hover:bg-brand-orange shrink-0 border border-white/40 rounded-full transition-colors">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.4466 7.23649C9.87448 7.15165 9.29012 7.24938 8.7767 7.51578C8.26327 7.78219 7.84692 8.20371 7.58687 8.72038C7.32682 9.23705 7.2363 9.82256 7.32819 10.3936C7.42009 10.9647 7.68971 11.4923 8.09872 11.9013C8.50773 12.3103 9.03529 12.5799 9.60637 12.6718C10.1775 12.7637 10.763 12.6732 11.2796 12.4131C11.7963 12.1531 12.2178 11.7367 12.4842 11.2233C12.7506 10.7099 12.8484 10.1255 12.7635 9.55337C12.677 8.96973 12.405 8.42941 11.9878 8.0122C11.5706 7.595 11.0303 7.32304 10.4466 7.23649Z" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0H5C2.23858 0 0 2.23858 0 5V15C0 17.7614 2.23858 20 5 20H15C17.7614 20 20 17.7614 20 15V5C20 2.23858 17.7614 0 15 0ZM7.62527 5.29673C8.60544 4.78813 9.72103 4.60156 10.8134 4.76354C11.9276 4.92876 12.9591 5.44796 13.7556 6.24444C14.5521 7.04092 15.0713 8.07245 15.2365 9.18666C15.3985 10.279 15.2119 11.3946 14.7033 12.3747C14.1947 13.3549 13.39 14.1498 12.4036 14.6462C11.4172 15.1427 10.2994 15.3155 9.2092 15.1401C8.11895 14.9646 7.11179 14.4499 6.33096 13.6691C5.55012 12.8882 5.03538 11.8811 4.85994 10.7908C4.68451 9.70057 4.85732 8.58277 5.35378 7.5964C5.85025 6.61003 6.6451 5.80532 7.62527 5.29673ZM15.5 3.25009C14.8096 3.25009 14.25 3.80973 14.25 4.50009C14.25 5.19044 14.8096 5.75009 15.5 5.75009H15.5125C16.2029 5.75009 16.7625 5.19044 16.7625 4.50009C16.7625 3.80973 16.2029 3.25009 15.5125 3.25009H15.5Z" fill="currentColor"/>
+              </svg>
+          </a>
+          <!-- linkedin -->
+          <a href="#" class="size-14 lg:size-16 grid place-items-center hover:bg-brand-orange shrink-0 border border-white/40 rounded-full transition-colors">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.4039 16.6671H13.5513V12.1277C13.5513 11.0453 13.5323 9.65185 12.0676 9.65185C10.5819 9.65185 10.3546 10.8312 10.3546 12.0489V16.6668H7.50201V7.33207H10.2405V8.60775H10.2788C10.5529 8.13161 10.9489 7.73991 11.4247 7.47438C11.9005 7.20884 12.4383 7.07942 12.9808 7.09988C15.872 7.09988 16.405 9.03227 16.405 11.5462L16.4039 16.6671ZM4.28334 6.05608C3.95593 6.05614 3.63586 5.95754 3.3636 5.77276C3.09134 5.58798 2.87912 5.32531 2.75377 5.01797C2.62843 4.71064 2.59558 4.37243 2.6594 4.04612C2.72322 3.71982 2.88082 3.42007 3.11229 3.18478C3.34376 2.94949 3.6387 2.78924 3.9598 2.72427C4.2809 2.65931 4.61375 2.69256 4.91626 2.81982C5.21876 2.94708 5.47734 3.16263 5.65928 3.43922C5.84123 3.7158 5.93837 4.041 5.93843 4.37368C5.93847 4.59458 5.8957 4.81332 5.81254 5.01742C5.72938 5.22151 5.60748 5.40697 5.45379 5.56319C5.3001 5.71942 5.11763 5.84335 4.91681 5.92792C4.71598 6.01249 4.50073 6.05604 4.28334 6.05608ZM5.70963 16.6671H2.85407V7.33207H5.70963V16.6671ZM17.826 0.000125561H1.42065C1.04829 -0.00414424 0.689499 0.141974 0.423113 0.406372C0.156728 0.67077 0.00454439 1.03182 0 1.41017V18.1493C0.00438885 18.5278 0.156479 18.8891 0.422856 19.1538C0.689233 19.4184 1.04811 19.5648 1.42065 19.5608H17.826C18.1993 19.5656 18.5592 19.4196 18.8266 19.1549C19.094 18.8903 19.2471 18.5286 19.2523 18.1493V1.40896C19.247 1.02986 19.0938 0.668402 18.8263 0.40401C18.5589 0.139619 18.1991 -0.0048744 17.826 0.000125561Z" fill="currentColor"/>
+              </svg>              
+          </a>
+          <!-- you tube -->
+          <a href="#" class="size-14 lg:size-16 grid place-items-center hover:bg-brand-orange shrink-0 border border-white/40 rounded-full transition-colors">
+            <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.5821 2.7003C19.3521 1.83421 18.6744 1.15211 17.8139 0.920629C16.2542 0.5 10 0.5 10 0.5C10 0.5 3.74586 0.5 2.18613 0.920629C1.32565 1.15215 0.647936 1.83421 0.417919 2.7003C0 4.27014 0 7.54545 0 7.54545C0 7.54545 0 10.8208 0.417919 12.3906C0.647936 13.2567 1.32565 13.9104 2.18613 14.1419C3.74586 14.5625 10 14.5625 10 14.5625C10 14.5625 16.2541 14.5625 17.8139 14.1419C18.6744 13.9104 19.3521 13.2567 19.5821 12.3906C20 10.8208 20 7.54545 20 7.54545C20 7.54545 20 4.27014 19.5821 2.7003ZM7.95453 10.5192V4.57171L13.1818 7.54552L7.95453 10.5192Z" fill="currentColor"/>
+              </svg>              
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/20">
+      <div class="max-w-xxl mx-auto md:flex items-center justify-between text-[15px]/5 px-6 md:px-4 pt-6 pb-8 md:py-6">
+        <p>Matrix, SA · 2024</p>
+        <div class="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4 mt-6 md:mt-0">
+          <a href="#" class="hover:text-brand-orange transition-colors">Avís legal</a>
+          <span class="w-6 md:w-px h-px md:h-6 bg-white/20"></span>
+          <a href="#" class="hover:text-brand-orange transition-colors">Política de cookies</a>
+          <span class="w-6 md:w-px h-px md:h-6 bg-white/20"></span>
+          <a href="#" class="hover:text-brand-orange transition-colors">Bústia ètica</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>  
+</body>
+</html>

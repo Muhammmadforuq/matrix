@@ -11,13 +11,18 @@
   }
 
   body{
-    @apply font-inter text-brand-blue-100 bg-brand-gray;
+    @apply font-inter text-brand-black-100 bg-brand-gray-10;
   }
 }
 
 .video-line{
-  @apply after:hidden md:after:block after:absolute after:-bottom-8 after:h-6 after:-left-0.5 after:w-px after:bg-brand-blue-200/30  before:hidden md:before:block before:absolute before:bottom-0 before:-left-8 before:w-6 before:h-px before:bg-brand-blue-200/30
+  @apply after:hidden md:after:block after:absolute after:-bottom-8 after:h-6 after:-left-0.5 after:w-px after:bg-brand-black-200/30  before:hidden md:before:block before:absolute before:bottom-0 before:-left-8 before:w-6 before:h-px before:bg-brand-black-200/30
 }
+
+.menu-border{
+  @apply before:absolute before:-inset-x-full before:top-0 before:h-px before:bg-brand-black-100/10 after:absolute after:bottom-0 after:-inset-x-full after:h-px after:bg-brand-black-100/10
+}
+
 
 .services-pagination-bullet {
   display: inline-block;
@@ -26,14 +31,13 @@
   transition: 0.5 color;
 }
 
-.services-pagination-bullet:hover {
-  color: #EA5B0C;
+.services-pagination-bullet{
+  @apply hover:text-brand-orange transition-colors
 }
 
 .services-pagination-bullet-active {
-  display: inline-block;
-  font-weight: 500;
-  color: #EA5B0C;
+  @apply inline-block font-medium text-brand-orange;
+  
 }
 
 
@@ -42,14 +46,20 @@
   transition: max-height 0.3s ease-out;
 }
 .accordion-item-header.active > .icon {
-  transform: rotate(180deg);
+ @apply rotate-180
 }
 
-.accordion-item-header.active > .icon{
-  transform: rotate(180deg);
+.navigation-swiper{
+  @apply pr-4
 }
 
 
+
+@media only screen and (min-width: 1440px) {
+  .navigation-swiper{
+    @apply pr-20
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .services-pagination-bullet {
@@ -60,4 +70,8 @@
   .services-pagination-bullet-active {
     display: inline-block;
   }
+}
+
+.custom-checkbox:checked + div svg{
+  @apply block
 }

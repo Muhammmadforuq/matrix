@@ -3,28 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/styles.css">
-  <title>Matrix || Home</title>
+  <title>Matrix || Pagina</title>
 </head>
 <body>
    
-  <header class="absolute left-0 w-full top-0 z-20">
-    <nav class="max-w-xxl mx-auto flex items-center justify-between p-6 lg:px-4 xl:pt-9 gap-6 xl:gap-10">
+  <header>
+    <nav class="max-w-xxl mx-auto flex items-center justify-between p-6 lg:px-4 xl:pt-8 gap-6 xl:gap-10">
       <a href="#" class="w-32 xl:w-auto lg:pb-4">
         <img src="./img/logo.svg" alt="logo">
       </a>
       <button type="button" class="lg:hidden toggleMenu">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 12H23" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M1 19H23" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M1 5H23" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M1 12H23" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M1 19H23" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M1 5H23" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>          
       </button>
       <div class="hidden lg:flex items-center gap-3.5 xl:gap-6">
         <div class="group relative cursor-pointer pb-4">
-          <div class="flex items-center text-base/5 xl:text-display-sm text-white space-x-1.5">
+          <div class="flex items-center text-base/5 xl:text-display-sm space-x-1.5">
             <span>Qui som</span>
             <svg class="group-hover:rotate-180 transition-transform" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.35292 10.5752L5.39043 10.625H5.45274H6.54726H6.79735L6.64724 10.425L2.14476 4.42497L2.10726 4.375H2.04478L1 4.375H0.875L0.875 4.5V4.59354V4.63538L0.900186 4.66879L5.35292 10.5752ZM9.95522 4.375H9.89301L9.8555 4.42464L6.79579 8.47364L6.73951 8.54812L6.79496 8.62324L7.36709 9.39829L7.46709 9.53375L7.56782 9.39884L11.1002 4.66833L11.125 4.63506V4.59354V4.5V4.375H11L9.95522 4.375Z" fill="#EA5B0C" stroke="#EA5B0C" stroke-width="0.25"/>
@@ -41,35 +39,35 @@
             </div>
           </div>
         </div>
-        <a href="#motlles" class="flex items-center text-base/5 xl:text-display-sm text-white space-x-1.5 pb-4">
+        <a href="#motlles" class="flex items-center text-base/5 xl:text-display-sm space-x-1.5 pb-4">
           <span>Motlles d'injecció</span>
           <svg class="group-hover:rotate-180 transition-transform" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5.35292 10.5752L5.39043 10.625H5.45274H6.54726H6.79735L6.64724 10.425L2.14476 4.42497L2.10726 4.375H2.04478L1 4.375H0.875L0.875 4.5V4.59354V4.63538L0.900186 4.66879L5.35292 10.5752ZM9.95522 4.375H9.89301L9.8555 4.42464L6.79579 8.47364L6.73951 8.54812L6.79496 8.62324L7.36709 9.39829L7.46709 9.53375L7.56782 9.39884L11.1002 4.66833L11.125 4.63506V4.59354V4.5V4.375H11L9.95522 4.375Z" fill="#EA5B0C" stroke="#EA5B0C" stroke-width="0.25"/>
             </svg>
         </a>
-        <a href="#" class="text-base/5 xl:text-display-sm text-white pb-4">Instal·lacions</a>
-        <a href="#services" class="flex items-center text-base/5 xl:text-display-sm text-white space-x-1.5 pb-4">
+        <a href="#" class="text-base/5 xl:text-display-sm pb-4">Instal·lacions</a>
+        <a href="#services" class="flex items-center text-base/5 xl:text-display-sm space-x-1.5 pb-4">
           <span>Serveis</span>
           <svg class="group-hover:rotate-180 transition-transform" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5.35292 10.5752L5.39043 10.625H5.45274H6.54726H6.79735L6.64724 10.425L2.14476 4.42497L2.10726 4.375H2.04478L1 4.375H0.875L0.875 4.5V4.59354V4.63538L0.900186 4.66879L5.35292 10.5752ZM9.95522 4.375H9.89301L9.8555 4.42464L6.79579 8.47364L6.73951 8.54812L6.79496 8.62324L7.36709 9.39829L7.46709 9.53375L7.56782 9.39884L11.1002 4.66833L11.125 4.63506V4.59354V4.5V4.375H11L9.95522 4.375Z" fill="#EA5B0C" stroke="#EA5B0C" stroke-width="0.25"/>
             </svg>
         </a>
-        <a href="#" class="flex items-center text-base/5 xl:text-display-sm text-white space-x-1.5 pb-4">
+        <a href="#" class="flex items-center text-base/5 xl:text-display-sm space-x-1.5 pb-4">
           <span>Recursos</span>
           <svg class="group-hover:rotate-180 transition-transform" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5.35292 10.5752L5.39043 10.625H5.45274H6.54726H6.79735L6.64724 10.425L2.14476 4.42497L2.10726 4.375H2.04478L1 4.375H0.875L0.875 4.5V4.59354V4.63538L0.900186 4.66879L5.35292 10.5752ZM9.95522 4.375H9.89301L9.8555 4.42464L6.79579 8.47364L6.73951 8.54812L6.79496 8.62324L7.36709 9.39829L7.46709 9.53375L7.56782 9.39884L11.1002 4.66833L11.125 4.63506V4.59354V4.5V4.375H11L9.95522 4.375Z" fill="#EA5B0C" stroke="#EA5B0C" stroke-width="0.25"/>
             </svg>
         </a>
-        <a href="#" class="flex items-center text-base/5 xl:text-display-sm text-white space-x-1.5 pb-4">
+        <a href="#" class="flex items-center text-base/5 xl:text-display-sm space-x-1.5 pb-4">
           <span>Feina</span>
           <svg class="group-hover:rotate-180 transition-transform" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5.35292 10.5752L5.39043 10.625H5.45274H6.54726H6.79735L6.64724 10.425L2.14476 4.42497L2.10726 4.375H2.04478L1 4.375H0.875L0.875 4.5V4.59354V4.63538L0.900186 4.66879L5.35292 10.5752ZM9.95522 4.375H9.89301L9.8555 4.42464L6.79579 8.47364L6.73951 8.54812L6.79496 8.62324L7.36709 9.39829L7.46709 9.53375L7.56782 9.39884L11.1002 4.66833L11.125 4.63506V4.59354V4.5V4.375H11L9.95522 4.375Z" fill="#EA5B0C" stroke="#EA5B0C" stroke-width="0.25"/>
             </svg>
         </a>
-        <a href="#" class="text-base/5 xl:text-display-sm text-white pb-4">On som</a>
+        <a href="#" class="text-base/5 xl:text-display-sm pb-4">On som</a>
         <div href="#" class="group relative cursor-pointer uppercase pb-4 xl:ml-10">
-          <div class="flex items-center text-base/5 xl:text-display-sm text-white space-x-1.5">
-            <svg class="text-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="flex items-center text-base/5 xl:text-display-sm space-x-1.5">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M3.59961 9H20.3996M3.59961 15H20.3996M11.4997 3C9.81501 5.69961 8.92188 8.81787 8.92188 12C8.92188 15.1821 9.81501 18.3004 11.4997 21M12.5 3C14.1847 5.69961 15.0778 8.81787 15.0778 12C15.0778 15.1821 14.1847 18.3004 12.5 21M3 12C3 13.1819 3.23279 14.3522 3.68508 15.4442C4.13738 16.5361 4.80031 17.5282 5.63604 18.364C6.47177 19.1997 7.46392 19.8626 8.55585 20.3149C9.64778 20.7672 10.8181 21 12 21C13.1819 21 14.3522 20.7672 15.4442 20.3149C16.5361 19.8626 17.5282 19.1997 18.364 18.364C19.1997 17.5282 19.8626 16.5361 20.3149 15.4442C20.7672 14.3522 21 13.1819 21 12C21 9.61305 20.0518 7.32387 18.364 5.63604C16.6761 3.94821 14.3869 3 12 3C9.61305 3 7.32387 3.94821 5.63604 5.63604C3.94821 7.32387 3 9.61305 3 12Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>              
             <span>Cat</span>
@@ -175,366 +173,229 @@
        </div>
      </div>
   </header>
+
+
   <main>
-    <!-- hero -->
     <section class="overflow-hidden">
-      <div class="relative pt-72 lg:pt-80 xl:pt-[26.25rem] pb-16 lg:pb-20 z-10">
-        <div class="relative max-w-xxl mx-auto px-6 lg:px-4 z-10">
-          <div class="md:w-1/2 text-white space-y-10">
-            <h1 class="font-light text-[2.75rem] lg:text-5xl xl:text-[5.25rem] leading-[1.05]">Motlles d’injecció d’alta precisió</h1>
-            <a href="#" class="group w-48 inline-flex items-center font-medium border border-white/40 hover:border-white active:text-brand-orange transition-colors rounded-full space-x-2 px-12 py-3">
-              <span>contacte</span>
-              <svg class="group-hover:translate-x-1 transition-transform" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 12H23M23 12L18 17M23 12L18 7" stroke="#EA5B0C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>              
-            </a>
+      <div class="max-w-xxl mx-auto px-4 mt-14">
+          <div class="menu-border relative flex items-center font-ibm-plex-sans text-sm uppercase space-x-1.5 py-5">
+              <span class="size-2.5 shrink-0 bg-brand-orange rounded-full"></span>
+              <a href="#">Qui som</a>
+              <a href="#">Qui som</a>
           </div>
-        </div>
-        <div class="absolute -left-[80%] md:left-0 top-0 right-0 h-full">
-          <img class="size-full object-cover" src="./img/hero.png" alt="Hero">
+          <h1 class="text-display-3xl lg:text-6xl xl:text-8xl mt-8">Presentació</h1>
+      </div>      
+    </section>
+
+    <section class="overflow-hidden">
+      <div class="max-w-current w-full mx-auto px-4 mt-20">
+        <div class="border-x border-brand-black-100/10 pt-[29.625rem] pb-16 px-8">
+          <p class="text-lg text-brand-black-300 mt-16">
+            Matrix va ser fundada pel grup S&P a Ripoll el 1974 al cor dels Pirineus. <br> <br>
+            Matrix compta amb unes instal·lacions totalment climatitzades de 4.300m2, 105,000 hores de capacitat de treball per any, dedicada al disseny i fabricació de motlles d'injecció d'alta precisió i matrius de premsa, i compta amb una plantilla de 65 treballadors. <br> <br>
+            El nostre know how i experiència en els últims <strong>40 anys</strong> ens permeten oferir als nostres clients els projectes més complexos i les solucions òptimes utilitzant la més avançada tecnologia integrada en CAD / CAM / CAE. <br> <br>
+            Oferim als nostres clients solucions completes en funció de les seves necessitats,des de la fase de disseny de la peça a les proves finals de producción dins la mateixes instal·lacions. <br> <br>
+            L'adaptació a una <strong class="inline-block border-b border-brand-orange">evolució tecnològica constant</strong> i la il·lusió dipositada en cada projecte ens ha permès assolir una posició competitiva en el mercat internacional. <br> <br>
+            El potencial més important de la nostra empresa, són les persones que fan d'ella una realitat. El treballadors reben una sòlida formació continuada dins de l'empresa, amb cursos periòdics de reciclatge. <br> <br>
+            La relació amb els nostres clients es basa en tres pilars fonamentals: servei, confidencialitat i compromís professional.
+          </p>
+          <ul class="lg:text-lg/6 text-brand-black-300 space-y-2 mt-4 ml-10">
+            <li class="flex items-center space-x-2">
+              <span class="w-4 h-0.5 bg-brand-orange"></span>
+              <p>The most advanced technical infrastructure</p>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="w-4 h-0.5 bg-brand-orange"></span>
+              <p>Fully air-conditioned brighty and tidy workshop</p>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="w-4 h-0.5 bg-brand-orange"></span>
+              <p>Human talent in continuos training</p>
+            </li>
+          </ul>
+          <div class="relative w-[66rem] h-[37.25rem] mt-16 -ml-8">
+            <img class="size-full object-cover" src="./img/factory-2.png" alt="">
+            <button type="button" class="absolute left-8 bottom-8 z-10">
+              <svg class="size-16" width="64" height="66" viewBox="0 0 64 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 32C0 14.3269 14.3269 0 32 0V0C49.6731 0 64 14.3269 64 32V33.3334C64 51.0065 49.6731 65.3333 32 65.3333V65.3333C14.3269 65.3333 0 51.0064 0 33.3333V32Z" fill="white" fill-opacity="0.1"/>
+                <path d="M63.25 32V33.3334C63.25 50.5923 49.2589 64.5833 32 64.5833C14.7411 64.5833 0.75 50.5922 0.75 33.3333V32C0.75 14.7411 14.7411 0.75 32 0.75C49.2589 0.75 63.25 14.7411 63.25 32Z" stroke="white" stroke-opacity="0.4" stroke-width="1.5"/>
+                <path d="M28 41.3333L38.6667 33.3333Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M28 25.3333L38.6667 33.3333Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                
+            </button>
+          </div>
+
+          <div class="mt-16 space-y-4">
+            <h3 class="font-medium text-2xl">Matrix va ser fundada pel grup S&P a Ripoll el 1974 al cor dels Pirineus</h3>
+            <p class="text-lg text-brand-black-300">
+              Oferim als nostres clients solucions completes en funció de les seves necessitats,des de la fase de disseny de la peça a les proves finals de producción dins la mateixes instal·lacions. <br> <br>
+              L'adaptació a una evolució tecnològica constant i la il·lusió dipositada en cada projecte ens ha permès assolir una posició competitiva en el mercat internacional. <br> <br>
+              El potencial més important de la nostra empresa, són les persones que fan d'ella una realitat. El treballadors reben una sòlida formació continuada dins de l'empresa, amb cursos periòdics de reciclatge. <br> <br>
+              La relació amb els nostres clients es basa en tres pilars fonamentals: servei, confidencialitat i compromís professional.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    
-    <!-- 50 anys id volutpat sit donec mattis sit lorem nascetur nulla -->
-    <section class="overflow-x-hidden">
-      <div class="relative max-w-xxl w-full mx-auto px-4 pt-16 xl:pt-28 pb-12 lg:pb-24 xl:pb-40 z-10">
-        <div class="relative z-20 w-full px-4 md:px-0">
-          <h2 class="max-w-4xl w-full text-display-3xl xl:text-[3.5rem] leading-tight">
-            50 anys id volutpat sit donec mattis sit lorem nascetur nulla
-          </h2>
-
-          <div class="grid md:grid-cols-3 gap-y-12 mt-12">
-            <div class="flex flex-col items-start font-medium text-sm lg:text-base/4 space-y-4 md:-ml-1">
-              <a href="#" class="group inline-flex items-center border border-brand-black-200/30 hover:border-black active:text-brand-orange transition-colors rounded-full space-x-2 px-5 xl:px-8 py-3">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M15 11H1V1M15 11L11 15M15 11L11 7" stroke="#EA5B0C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>                             
-                <span>Qui som</span>
-              </a>
-              <a href="#" class="group inline-flex items-center border border-brand-black-200/30 hover:border-black active:text-brand-orange transition-colors rounded-full space-x-2 px-5 xl:px-8 py-3">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M15 11H1V1M15 11L11 15M15 11L11 7" stroke="#EA5B0C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>                             
-                <span>La nostar historia</span>
-              </a>
-              <a href="#" class="group inline-flex items-center border border-brand-black-200/30 hover:border-black active:text-brand-orange transition-colors rounded-full space-x-2 px-5 xl:px-8 py-3">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M15 11H1V1M15 11L11 15M15 11L11 7" stroke="#EA5B0C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>                             
-                <span>Esdeveniments propers</span>
-              </a>
-            </div>
-            <div class="relative video-line md:col-span-2 h-48 md:h-96 xl:h-[33.25rem] w-[59rem] -ml-10 md:-ml-1">
-              <img src="./img/factory.png" class="size-full object-cover" alt="">
-              <button type="button" class="absolute left-4 lg:left-8 bottom-4 lg:bottom-8 size-10 lg:size-16 flex items-center justify-center rounded-full border border-white/40 bg-white/10 z-10">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 24.0001L22.6667 16.0001Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M12 8.00009L22.6667 16.0001Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="absolute top-0 left-4 md:left-0 h-full w-px bg-brand-black-200/10 md:bg-transparent md:size-full md:grid md:grid-cols-3 md:divide-x md:divide-brand-black-200/10 z-0">
-          <div class="hidden md:block"></div>
-          <div class="hidden md:block"></div>
-          <div class="hidden md:block"></div>
-        </div>
-      </div>
-    </section>
-  
-    <!-- Motlles d’injecció -->
-    <section id="motlles" class="relative max-w-xxl w-full mx-auto px-4 pb-32 z-10 overflow-hidden">
-      <div class="relative z-20 w-full">
-        <h2 class="max-w-4xl w-full text-display-3xl lg:text-5xl xl:text-7xl pl-4 md:pl-0">Motlles d’injecció</h2>
-        <div class="grid md:grid-cols-3 md:text-center gap-y-16 mt-16 lg:-ml-1"> 
-          <div class="flex flex-col items-start md:items-center px-4 lg:px-7 xl:px-14 md:-translate-x-2">
-            <div class="size-32 lg:size-36 xl:size-52 shrink-0 rounded-full bg-transparent">
-              <img class="size-full object-cover" src="./img/circle-1.png" alt="Circle">
-            </div>
-            <h3 class="md:min-h-20 text-3xl mt-6 lg:mt-9">Mèdic i farmacèutic</h3>
-            <p class="lg:text-lg/6 text-brand-black-300 mt-2 lg:mt-4 md:px-3 lg:px-7">
-              Tristique amet purus orci at elementum pellentesque arcu ipsum sit. Blandit quam habitasse tempor sit.
-            </p>
-            <a href="#" class="group flex items-center font-medium text-sm lg:text-base/4 border border-brand-black-100/10 hover:border-brand-black-300 active:text-brand-orange transition-colors rounded-full space-x-2 px-5 lg:px-12 py-3 mt-6 lg:mt-8">
-              <span>Text Call to Action 1</span>
-              <svg class="group-hover:translate-x-1 transition-transform" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 12H23M23 12L18 17M23 12L18 7" stroke="#EA5B0C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>              
-            </a>
-          </div>
-          <div class="flex flex-col items-start md:items-center px-4 lg:px-7 xl:px-14 md:-mr-2">
-            <div class="size-32 lg:size-36 xl:size-52 shrink-0 rounded-full bg-transparent">
-              <!-- <img class="size-full object-cover" src="./img/circle-1.png" alt="Circle"> -->
-            </div>
-            <h3 class="md:min-h-20 text-3xl mt-6 lg:mt-9">Bellesa i fragàncies</h3>
-            <p class="lg:text-lg/6 text-brand-black-300 mt-2 lg:mt-4 md:px-3 lg:px-7">
-              Nisl iaculis nec fames dui imperdiet cras elit ultrices et massa gravida netus sed. Elit faucibus eu ipsum
-            </p>
-            <a href="#" class="group flex items-center font-medium text-sm lg:text-base/4 border border-brand-black-100/10 hover:border-brand-black-300 active:text-brand-orange transition-colors rounded-full space-x-2 px-5 lg:px-12 py-3 mt-6 lg:mt-8">
-              <span>Text Call to Action 2</span>
-              <svg class="group-hover:translate-x-1 transition-transform" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 12H23M23 12L18 17M23 12L18 7" stroke="#EA5B0C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>              
-            </a>
-          </div>
-          <div class="flex flex-col items-start md:items-center px-4 lg:px-7 xl:px-14 md:translate-x-2">
-            <div class="size-32 lg:size-36 xl:size-52 shrink-0 rounded-full bg-transparent">
-              <img class="size-full object-cover" src="./img/circle-3.png" alt="Circle">
-            </div>
-            <h3 class="md:min-h-20 text-3xl mt-6 lg:mt-9">Packaging</h3>
-            <p class="lg:text-lg/6 text-brand-black-300 mt-2 lg:mt-4 md:px-3 lg:px-7">
-              Varius nec mi duis nam pellentesque varius netus, scelerisque sed blandit tincidunt elit justo morbi
-            </p>
-            <a href="#" class="group flex items-center font-medium text-sm lg:text-base/4 border border-brand-black-100/10 hover:border-brand-black-300 active:text-brand-orange transition-colors rounded-full space-x-2 px-5 lg:px-12 py-3 mt-6 lg:mt-8">
-              <span>Text Call to Action 3</span>
-              <svg class="group-hover:translate-x-1 transition-transform" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 12H23M23 12L18 17M23 12L18 7" stroke="#EA5B0C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>              
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="absolute top-0 left-4 md:left-0 h-full w-px bg-brand-black-200/10 md:bg-transparent md:size-full md:grid md:grid-cols-3 md:divide-x md:divide-brand-black-200/10 z-0">
-        <div class="hidden md:block"></div>
-        <div class="hidden md:block"></div>
-        <div class="hidden md:block"></div>
-      </div>
-    </section>
-    
-    <!-- Serveis -->
-    <section id="services" class="relative overflow-hidden">
-      <div class="relative max-w-xxl w-full mx-auto px-4 z-10">
-        <div class="relative z-20 w-full">
-          <h2 class="text-display-3xl lg:text-5xl xl:text-7xl pl-2 md:pl-0">Serveis</h2>
-          <div class="flex items-center lg:items-start justify-between mt-11 pl-4 pb-3 lg:pb-0"> 
-            <div class="relative services-pagination text-base lg:text-display-sm lg:pt-4 mt-4 md:mt-0">
-              <p class="services-pagination-bullet">Enginyeria</p>
-              <p class="services-pagination-bullet">Producció in house</p>
-            </div>
-            <div class="flex items-center space-x-3 lg:pb-4">
-              <!-- prev -->
-              <button type="button" class="services-prev size-10 lg:size-12 flex items-center justify-center shrink-0 disabled:cursor-not-allowed border border-brand-black-100/30 rounded-full">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M23 12H1M1 12L6 17M1 12L6 7" stroke="#EA5B0C" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>                  
-              </button>
-              <!-- next -->
-              <button type="button" class="services-next size-10 lg:size-12 flex items-center justify-center shrink-0 disabled:cursor-not-allowed border border-brand-black-100/30 rounded-full">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 12H23M23 12L18 17M23 12L18 7" stroke="#EA5B0C" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>                                   
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="absolute top-0 left-4 md:left-0 h-full w-px bg-brand-black-200/10 md:bg-transparent md:size-full md:grid md:grid-cols-3 md:divide-x md:divide-brand-black-200/10 z-0">
-          <div></div> <div></div> <div></div>
-        </div>
-      </div>
-      <div class="services">
+    <section class="relative overflow-hidden bg-brand-gray-10">
+      <div class="picture">
         <div class="swiper-wrapper">
-          <div class="swiper-slide relative bg-white">
-            <div class="w-full md:w-1/2 md:absolute md:top-0 md:right-0 aspect-[3/2] md:h-full">
-              <img class="size-full object-cover" src="./img/serveis.png" alt="Serveis img">
-            </div>
-            <div class="relative max-w-xxl w-full mx-auto pt-8 pb-16 md:py-16 lg:py-28 px-6 md:px-4">
-              <div class="md:w-1/2 md:px-6 xl:pl-12 xl:pr-20">
-                <h3 class="text-3xl xl:text-5xl">Enginyeria</h3>
-                <p class="xl:text-lg text-brand-black-300 mt-6">
-                  Dedicada al disseny i fabricació de motlles d'injecció d'alta precisió i matrius de premsa, i compta amb una plantilla de 65 treballadors.
-                </p>
-                <ul class="lg:text-lg/6 text-brand-black-300 space-y-2 mt-4">
-                  <li class="flex items-center space-x-2">
-                    <span class="w-4 h-0.5 bg-brand-orange"></span>
-                    <p>The most advanced technical infrastructure</p>
-                  </li>
-                  <li class="flex items-center space-x-2">
-                    <span class="w-4 h-0.5 bg-brand-orange"></span>
-                    <p>Fully air-conditioned brighty and tidy workshop</p>
-                  </li>
-                  <li class="flex items-center space-x-2">
-                    <span class="w-4 h-0.5 bg-brand-orange"></span>
-                    <p>Human talent in continuos training</p>
-                  </li>
-                </ul>
-                <a href="#" class="group inline-flex items-center font-medium text-sm lg:text-base/4 border border-brand-black-100/30 hover:border-brand-black-300 active:text-brand-orange transition-colors rounded-full space-x-2 px-5 lg:px-12 py-3 mt-10">
-                  <span>Més informació</span>
-                  <svg class="size-4 lg:size-6 group-hover:translate-x-1 transition-transform" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 12H23M23 12L18 17M23 12L18 7" stroke="#EA5B0C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>              
-                </a>
+          <div class="swiper-slide">
+            <div class="relative max-w-current w-full mx-auto px-4 h-full">
+              <div class="border-r border-brand-black-100/10">
+                <div class="relative h-[37.25rem] -ml-[100%] z-10">
+                  <img class="size-full object-cover" src="./img/lamp.png" alt="Lamp">
+                </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide relative bg-white">
-            <div class="w-full md:w-1/2 md:absolute md:top-0 md:right-0 aspect-[3/2] md:h-full">
-              <img class="size-full object-cover" src="./img/serveis.png" alt="Serveis img">
-            </div>
-            <div class="relative max-w-xxl w-full mx-auto pt-8 pb-16 md:py-16 lg:py-28 px-6 md:px-4">
-              <div class="md:w-1/2 md:px-6 xl:pl-12 xl:pr-20">
-                <h3 class="text-3xl xl:text-5xl">Producció in house</h3>
-                <p class="xl:text-lg text-brand-black-300 mt-6">
-                  Dedicada al disseny i fabricació de motlles d'injecció d'alta precisió i matrius de premsa, i compta amb una plantilla de 65 treballadors.
-                </p>
-                <ul class="lg:text-lg/6 text-brand-black-300 space-y-2 mt-4">
-                  <li class="flex items-center space-x-2">
-                    <span class="w-4 h-0.5 bg-brand-orange"></span>
-                    <p>The most advanced technical infrastructure</p>
-                  </li>
-                  <li class="flex items-center space-x-2">
-                    <span class="w-4 h-0.5 bg-brand-orange"></span>
-                    <p>Fully air-conditioned brighty and tidy workshop</p>
-                  </li>
-                  <li class="flex items-center space-x-2">
-                    <span class="w-4 h-0.5 bg-brand-orange"></span>
-                    <p>Human talent in continuos training</p>
-                  </li>
-                </ul>
-                <a href="#" class="group inline-flex items-center font-medium text-sm lg:text-base/4 border border-brand-black-100/30 hover:border-brand-black-300 active:text-brand-orange transition-colors rounded-full space-x-2 px-5 lg:px-12 py-3 mt-10">
-                  <span>Més informació</span>
-                  <svg class="size-4 lg:size-6 group-hover:translate-x-1 transition-transform" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 12H23M23 12L18 17M23 12L18 7" stroke="#EA5B0C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>              
-                </a>
+          <div class="swiper-slide">
+            <div class="relative max-w-current w-full mx-auto px-4 h-full">
+              <div class="border-r border-brand-black-100/10">
+                <div class="relative h-[37.25rem] -ml-[100%] z-10">
+                  <img class="size-full object-cover" src="./img/lamp.png" alt="Lamp">
+                </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide relative bg-white">
-            <div class="w-full md:w-1/2 md:absolute md:top-0 md:right-0 aspect-[3/2] md:h-full">
-              <img class="size-full object-cover" src="./img/serveis.png" alt="Serveis img">
-            </div>
-            <div class="relative max-w-xxl w-full mx-auto pt-8 pb-16 md:py-16 lg:py-28 px-6 md:px-4">
-              <div class="md:w-1/2 md:px-6 xl:pl-12 xl:pr-20">
-                <h3 class="text-3xl xl:text-5xl">Mould trials lab</h3>
-                <p class="xl:text-lg text-brand-black-300 mt-6">
-                  Dedicada al disseny i fabricació de motlles d'injecció d'alta precisió i matrius de premsa, i compta amb una plantilla de 65 treballadors.
-                </p>
-                <ul class="lg:text-lg/6 text-brand-black-300 space-y-2 mt-4">
-                  <li class="flex items-center space-x-2">
-                    <span class="w-4 h-0.5 bg-brand-orange"></span>
-                    <p>The most advanced technical infrastructure</p>
-                  </li>
-                  <li class="flex items-center space-x-2">
-                    <span class="w-4 h-0.5 bg-brand-orange"></span>
-                    <p>Fully air-conditioned brighty and tidy workshop</p>
-                  </li>
-                  <li class="flex items-center space-x-2">
-                    <span class="w-4 h-0.5 bg-brand-orange"></span>
-                    <p>Human talent in continuos training</p>
-                  </li>
-                </ul>
-                <a href="#" class="group inline-flex items-center font-medium text-sm lg:text-base/4 border border-brand-black-100/30 hover:border-brand-black-300 active:text-brand-orange transition-colors rounded-full space-x-2 px-5 lg:px-12 py-3 mt-10">
-                  <span>Més informació</span>
-                  <svg class="size-4 lg:size-6 group-hover:translate-x-1 transition-transform" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 12H23M23 12L18 17M23 12L18 7" stroke="#EA5B0C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>              
-                </a>
+          <div class="swiper-slide">
+            <div class="relative max-w-current w-full mx-auto px-4 h-full">
+              <div class="border-r border-brand-black-100/10">
+                <div class="relative h-[37.25rem] -ml-[100%] z-10">
+                  <img class="size-full object-cover" src="./img/lamp.png" alt="Lamp">
+                </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide relative bg-white">
-            <div class="w-full md:w-1/2 md:absolute md:top-0 md:right-0 aspect-[3/2] md:h-full">
-              <img class="size-full object-cover" src="./img/serveis.png" alt="Serveis img">
-            </div>
-            <div class="relative max-w-xxl w-full mx-auto pt-8 pb-16 md:py-16 lg:py-28 px-6 md:px-4">
-              <div class="md:w-1/2 md:px-6 xl:pl-12 xl:pr-20">
-                <h3 class="text-3xl xl:text-5xl">Quality laboratory</h3>
-                <p class="xl:text-lg text-brand-black-300 mt-6">
-                  Dedicada al disseny i fabricació de motlles d'injecció d'alta precisió i matrius de premsa, i compta amb una plantilla de 65 treballadors.
-                </p>
-                <ul class="lg:text-lg/6 text-brand-black-300 space-y-2 mt-4">
-                  <li class="flex items-center space-x-2">
-                    <span class="w-4 h-0.5 bg-brand-orange"></span>
-                    <p>The most advanced technical infrastructure</p>
-                  </li>
-                  <li class="flex items-center space-x-2">
-                    <span class="w-4 h-0.5 bg-brand-orange"></span>
-                    <p>Fully air-conditioned brighty and tidy workshop</p>
-                  </li>
-                  <li class="flex items-center space-x-2">
-                    <span class="w-4 h-0.5 bg-brand-orange"></span>
-                    <p>Human talent in continuos training</p>
-                  </li>
-                </ul>
-                <a href="#" class="group inline-flex items-center font-medium text-sm lg:text-base/4 border border-brand-black-100/30 hover:border-brand-black-300 active:text-brand-orange transition-colors rounded-full space-x-2 px-5 lg:px-12 py-3 mt-10">
-                  <span>Més informació</span>
-                  <svg class="size-4 lg:size-6 group-hover:translate-x-1 transition-transform" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 12H23M23 12L18 17M23 12L18 7" stroke="#EA5B0C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>              
-                </a>
+          <div class="swiper-slide">
+            <div class="relative max-w-current w-full mx-auto px-4 h-full">
+              <div class="border-r border-brand-black-100/10">
+                <div class="relative h-[37.25rem] -ml-[100%] z-10">
+                  <img class="size-full object-cover" src="./img/lamp.png" alt="Lamp">
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Novetats -->
-    <section class="relative max-w-xxl w-full mx-auto px-4 pt-10 lg:pt-24 xl:pt-40 md:pb-28 z-10">
-      <div class="relative z-20 w-full">
-        <h2 class="text-display-3xl lg:text-5xl xl:text-7xl md:text-center pl-4 md:pl-0">Novetats</h2>
-        <div class="grid md:grid-cols-3 gap-y-12 mt-12 lg:mt-16 px-4"> 
-          <a href="#" class="group md:px-4 lg:px-8 md:-translate-x-2">
-            <div class="space-y-2">
-              <p class="w-4 group-hover:w-24 transition-[width] h-0.5 bg-brand-orange"></p>
-              <p class="font-ibm-plex-sans text-xs md:text-sm text-brand-black-300">28 / 05 / 2024</p>
-            </div>
-            <div class="w-full h-44 xl:h-64 bg-transparent mt-3">
-              <img class="size-full object-cover" src="./img/novetats-1.png" alt="Novetats-1">
-            </div>
-            <h5 class="font-bold text-xs text-brand-orange uppercase mt-10">Novetats</h5>
-            <h3 class="text-3xl group-hover:text-brand-orange transition-colors mt-2">
-              Tristique sed non neque ac eget sagittis volutpat scelerisqua tellus posuere
-            </h3>
-          </a>
-          <a href="#" class="group md:px-4 lg:px-8 md:-mx-2">
-            <div class="space-y-2">
-              <p class="w-4 group-hover:w-24 transition-[width] h-0.5 bg-brand-orange"></p>
-              <p class="font-ibm-plex-sans text-xs md:text-sm text-brand-black-300">28 / 05 / 2024</p>
-            </div>
-            <div class="w-full h-44 xl:h-64 bg-transparent mt-3">
-              <img class="size-full object-cover" src="./img/novetats-2.png" alt="Novetats-1">
-            </div>
-            <h5 class="font-bold text-xs text-brand-orange uppercase mt-10">Novetats</h5>
-            <h3 class="text-3xl group-hover:text-brand-orange transition-colors mt-2">
-              Viverra tellus mi posuere nullamac nam odio auctor
-            </h3>
-          </a>
-          <a href="#" class="group md:px-4 lg:px-8 md:translate-x-2">
-            <div class="space-y-2">
-              <p class="w-4 group-hover:w-24 transition-[width] h-0.5 bg-brand-orange"></p>
-              <p class="font-ibm-plex-sans text-xs md:text-sm text-brand-black-300">28 / 05 / 2024</p>
-            </div>
-            <div class="w-full h-44 xl:h-64 bg-transparent mt-3">
-              <!-- <img class="size-full object-cover" src="./img/novetats-1.png" alt="Novetats-1"> -->
-            </div>
-            <h5 class="font-bold text-xs text-brand-orange uppercase mt-10">esdeveniments</h5>
-            <h3 class="text-3xl group-hover:text-brand-orange transition-colors mt-2">
-              Cursus pellentesque at pellentesque proin justo
-            </h3>
-          </a>
-
+      <div class="relative max-w-current w-full mx-auto px-4 h-full hidden">
+        <div class="border-r border-brand-black-100/10">
+          <div class="relative h-[37.25rem] -ml-[100%] z-10">
+            <img class="size-full object-cover" src="./img/lamp.png" alt="Lamp">
+          </div>
         </div>
-        <div class="flex items-center justify-center mt-16 lg:mt-28">
-          <a href="#" class="group inline-flex items-center font-medium leading-4 border border-brand-black-100/30 hover:border-brand-black-300 active:text-brand-orange transition-colors rounded-full space-x-2 px-11 py-3 mt-10">
-            <span>Més informació</span>
-            <svg class="group-hover:translate-x-1 transition-transform" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 12H23M23 12L18 17M23 12L18 7" stroke="#EA5B0C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>              
-          </a>
-        </div>  
       </div>
-      <div class="absolute top-0 left-4 md:left-0 h-full w-px bg-brand-black-200/10 md:bg-transparent md:size-full md:grid md:grid-cols-3 md:divide-x md:divide-brand-black-200/10 z-0">
-        <div></div> <div></div> <div></div>
+      <div class="absolute navigation-swiper right-0 top-0 h-full inline-flex flex-col items-start justify-between z-10 bg-brand-gray-10 pl-7">
+        <!-- swiper navigation -->
+        <div class="inline-flex items-center space-x-3 lg:pb-4">
+          <!-- prev -->
+          <button type="button" class="picture-prev size-10 lg:size-12 flex items-center justify-center shrink-0 disabled:cursor-not-allowed border border-brand-black-100/30 rounded-full">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23 12H1M1 12L6 17M1 12L6 7" stroke="#EA5B0C" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                  
+          </button>
+          <!-- next -->
+          <button type="button" class="picture-next size-10 lg:size-12 flex items-center justify-center shrink-0 disabled:cursor-not-allowed border border-brand-black-100/30 rounded-full">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 12H23M23 12L18 17M23 12L18 7" stroke="#EA5B0C" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                                   
+          </button>
+        </div>
+        <p class="relative max-w-64 font-ibm-plex-sans text-sm before:absolute before:top-0 before:left-0 before:h-0.5 before:w-4 before:bg-brand-orange pt-2">
+          Ullamcorper sed diam risus arcu auctor pulvinar. Auctor amet ipsum nisl nunc.
+        </p>
       </div>
     </section>
-    
+
+    <section class="overflow-hidden">
+      <div class="max-w-current w-full mx-auto px-4">
+        <div class="border-x border-brand-black-100/10 space-y-16 pt-14 pb-16 pl-6 pr-10">
+          <p class="text-lg text-brand-black-300">
+            Matrix compta amb unes instal·lacions totalment climatitzades de 4.300m2, 105,000 hores de capacitat de treball per any, dedicada al disseny i fabricació de motlles d'injecció d'alta precisió i matrius de premsa, i compta amb una plantilla de 65 treballadors. <br> <br>
+            El nostre know how i experiència en els últims 40 anys ens permeten oferir als nostres clients els projectes més complexos i les solucions òptimes utilitzant la més avançada tecnologia integrada en CAD / CAM / CAE.
+          </p>
+          
+          <div class="space-y-8">
+            <div class="flex items-start gap-4 border-b border-brand-black-100/10 pb-8">
+              <div class="w-20">
+                <img class="size-full object-cover" src="./img/iqnet.png" alt="">
+              </div>
+              <div class="space-y-2">
+                <h3 class="font-medium text-2xl">QNET ISO 9001:2015</h3>
+                <p class="font-ibm-plex-sans text-sm">PDF - 10Mb</p>
+              </div>
+              <button type="button" class="font-medium border border-brand-black-100/30 hover:border-brand-orange hover:text-brand-orange transition-colors rounded-full py-3 px-10 ml-auto">
+                Descarregar
+              </button>
+            </div>
+            <div class="flex items-start gap-4 border-b border-brand-black-100/10 pb-8">
+              <div class="w-20">
+                <img class="size-full object-cover" src="./img/aenor.png" alt="">
+              </div>
+              <div class="space-y-2">
+                <h3 class="font-medium text-2xl">AENOR ISO 9001:2015</h3>
+                <p class="font-ibm-plex-sans text-sm">PDF - 10Mb</p>
+              </div>
+              <button type="button" class="font-medium border border-brand-black-100/30 hover:border-brand-orange hover:text-brand-orange transition-colors rounded-full py-3 px-10 ml-auto">
+                Descarregar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Cronologies -->
+    <section class="bg-white py-28">
+      <div class="max-w-xxl mx-auto px-4">
+        <h2 class="text-7xl text-center">Cronologies</h2>
+        <div class="relative grid grid-cols-2 after:absolute after:w-px after:bg-brand-black-100/10 after:inset-y-0 after:left-1/2 after:-translate-x-1/2 after:z-0 gap-y-60 mt-20 px-16">
+          <div class="relative h-96 pb-28 pl-14 mr-28">
+            <img class="size-full object-cover" src="./img/master.png" alt="">
+            <div class="w-52 absolute bottom-0 left-0">
+              <img class="size-full object-cover" src="./img/hospital.png" alt="">
+            </div>
+          </div>
+          <div class="relative before:absolute before:top-0 before:left-0 before:h-72 before:w-px before:bg-brand-orange pr-12 pt-3.5 z-10">
+            <div class="flex items-center -ml-1.5">
+              <div class="flex items-center">
+                <span class="size-3 bg-brand-orange rounded-full"></span>
+                <span class="w-10 h-0.5 bg-brand-orange"></span>
+              </div>                 
+              <p class="inline-block font-ibm-plex-sans text-sm/4 text-white bg-brand-orange rounded-lg px-2 py-1.5">
+                12/01/1974
+              </p>
+            </div>
+            <div class="space-y-2 pl-10 mt-6">
+              <h3 class="font-medium text-2xl">Tristique sed non neque ac eget sagittis volutpat scelerisqua tellus posuere</h3>
+              <p class="text-lg leading-normal text-brand-black-300">
+                En 1974, en el centro urbano de Ripoll, nace Matrix SA. La nueva compañía es una iniciativa de los industriales ripolleses Eduard Soler y Josep Palau, que desde 1971 gestaban la creación de un taller de utillajes que proveyera a la empresa S&P de matrices de estampación metálica y moldes de inyección de plástico y aluminio.
+              </p>
+            </div>
+          </div>
+          <div class="relative text-right z-10">
+            <div class="flex justify-end items-center -mr-1.5">               
+              <p class="inline-block font-ibm-plex-sans text-sm/4 text-brand-black-200 bg-brand-gray-10-100 rounded-lg px-2 py-1.5">
+                23/12/1980
+              </p>
+              <div class="flex items-center">
+                <span class="w-10 h-0.5 bg-brand-gray-10-100"></span>
+                <span class="size-3 rounded-full bg-brand-gray-10-100"></span>
+              </div>            
+            </div>
+            <div class="space-y-2 pl-10 mt-6 pr-12">
+              <h3 class="font-medium text-2xl">Tristique sed non neque ac eget sagittis volutpat scelerisqua tellus posuere</h3>
+              <p class="text-lg leading-normal text-brand-black-300">
+                En 1974, en el centro urbano de Ripoll, nace Matrix SA. La nueva compañía es una iniciativa de los industriales ripolleses Eduard Soler y Josep Palau, que desde 1971 gestaban la creación de un taller de utillajes que proveyera a la empresa S&P de matrices de estampación metálica y moldes de inyección de plástico y aluminio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>   
+          
     <!-- Volutpat sit donec mattis  sit lorem nascetur nulla -->
-    <section class="relative mt-16 md:mt-0">
+    <section class="relative">
       <div class="relative max-w-xxl mx-auto text-white px-6 md:px-4 py-24 lg:pt-40 lg:pb-20 space-y-6 z-10">
         <h3 class="md:max-w-2xl text-3xl lg:text-5xl lg:pr-28">Volutpat sit donec mattis  sit lorem nascetur nulla</h3>
         <a href="#" class="group inline-flex items-center font-medium text-sm md:text-base/none border border-white/40 hover:border-white active:text-brand-orange transition-colors rounded-full space-x-2 px-9 lg:px-12 py-3">
@@ -646,8 +507,7 @@
       </div>
     </div>
   </footer>
-  
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   <script src="app.js"></script>  
 </body>
 </html>
