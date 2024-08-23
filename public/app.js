@@ -2,6 +2,7 @@ document.querySelectorAll('.toggleMenu').forEach((btn)=>{
   if(btn){
     btn.addEventListener('click',()=>{
       document.querySelector('.menu').classList.toggle('-translate-x-full');
+      document.body.classList.toggle('overflow-hidden')
     })
   }
 })

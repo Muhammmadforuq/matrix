@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/styles.css">
   <title>Matrix || Pagina</title>
 </head>
 <body>
    
-  <header>
+  <header class="relative z-10">
     <nav class="max-w-xxl mx-auto flex items-center justify-between p-6 lg:px-4 xl:pt-8 gap-6 xl:gap-10">
       <a href="#" class="w-32 xl:w-auto lg:pb-4">
         <img src="./img/logo.svg" alt="logo">
@@ -22,7 +23,7 @@
       </button>
       <div class="hidden lg:flex items-center gap-3.5 xl:gap-6">
         <div class="group relative cursor-pointer pb-4">
-          <div class="flex items-center text-base/5 xl:text-display-sm space-x-1.5">
+          <div class="relative flex items-center text-base/5 xl:text-display-sm space-x-1.5 z-10">
             <span>Qui som</span>
             <svg class="group-hover:rotate-180 transition-transform" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.35292 10.5752L5.39043 10.625H5.45274H6.54726H6.79735L6.64724 10.425L2.14476 4.42497L2.10726 4.375H2.04478L1 4.375H0.875L0.875 4.5V4.59354V4.63538L0.900186 4.66879L5.35292 10.5752ZM9.95522 4.375H9.89301L9.8555 4.42464L6.79579 8.47364L6.73951 8.54812L6.79496 8.62324L7.36709 9.39829L7.46709 9.53375L7.56782 9.39884L11.1002 4.66833L11.125 4.63506V4.59354V4.5V4.375H11L9.95522 4.375Z" fill="#EA5B0C" stroke="#EA5B0C" stroke-width="0.25"/>
@@ -65,7 +66,7 @@
             </svg>
         </a>
         <a href="#" class="text-base/5 xl:text-display-sm pb-4">On som</a>
-        <div href="#" class="group relative cursor-pointer uppercase pb-4 xl:ml-10">
+        <div href="#" class="group relative cursor-pointer uppercase pb-4 xl:ml-10 z-10">
           <div class="flex items-center text-base/5 xl:text-display-sm space-x-1.5">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M3.59961 9H20.3996M3.59961 15H20.3996M11.4997 3C9.81501 5.69961 8.92188 8.81787 8.92188 12C8.92188 15.1821 9.81501 18.3004 11.4997 21M12.5 3C14.1847 5.69961 15.0778 8.81787 15.0778 12C15.0778 15.1821 14.1847 18.3004 12.5 21M3 12C3 13.1819 3.23279 14.3522 3.68508 15.4442C4.13738 16.5361 4.80031 17.5282 5.63604 18.364C6.47177 19.1997 7.46392 19.8626 8.55585 20.3149C9.64778 20.7672 10.8181 21 12 21C13.1819 21 14.3522 20.7672 15.4442 20.3149C16.5361 19.8626 17.5282 19.1997 18.364 18.364C19.1997 17.5282 19.8626 16.5361 20.3149 15.4442C20.7672 14.3522 21 13.1819 21 12C21 9.61305 20.0518 7.32387 18.364 5.63604C16.6761 3.94821 14.3869 3 12 3C9.61305 3 7.32387 3.94821 5.63604 5.63604C3.94821 7.32387 3 9.61305 3 12Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
@@ -177,20 +178,20 @@
 
   <main>
     <section class="overflow-hidden">
-      <div class="max-w-xxl mx-auto px-4 mt-14">
+      <div class="max-w-xxl mx-auto px-4 lg:mt-14">
           <div class="menu-border relative flex items-center font-ibm-plex-sans text-sm uppercase space-x-1.5 py-5">
               <span class="size-2.5 shrink-0 bg-brand-orange rounded-full"></span>
               <a href="#">Qui som</a>
               <a href="#">Qui som</a>
           </div>
-          <h1 class="text-display-3xl lg:text-6xl xl:text-8xl mt-8">Presentació</h1>
+          <h1 class="text-display-3xl lg:text-6xl xl:text-8xl mt-5 lg:mt-8">Presentació</h1>
       </div>      
     </section>
 
     <section class="overflow-hidden">
-      <div class="max-w-current w-full mx-auto px-4 mt-20">
-        <div class="border-x border-brand-black-100/10 pt-[29.625rem] pb-16 px-8">
-          <p class="text-lg text-brand-black-300 mt-16">
+      <div class="max-w-current w-full mx-auto px-4 mt-8 lg:mt-20">
+        <div class="border-l md:border-x border-brand-black-100/10 pt-44 lg:pt-56 xl:pt-[29.625rem] pb-16 px-4 lg:px-8">
+          <p class="lg:text-lg text-brand-black-300 mt-16">
             Matrix va ser fundada pel grup S&P a Ripoll el 1974 al cor dels Pirineus. <br> <br>
             Matrix compta amb unes instal·lacions totalment climatitzades de 4.300m2, 105,000 hores de capacitat de treball per any, dedicada al disseny i fabricació de motlles d'injecció d'alta precisió i matrius de premsa, i compta amb una plantilla de 65 treballadors. <br> <br>
             El nostre know how i experiència en els últims <strong>40 anys</strong> ens permeten oferir als nostres clients els projectes més complexos i les solucions òptimes utilitzant la més avançada tecnologia integrada en CAD / CAM / CAE. <br> <br>
@@ -199,7 +200,7 @@
             El potencial més important de la nostra empresa, són les persones que fan d'ella una realitat. El treballadors reben una sòlida formació continuada dins de l'empresa, amb cursos periòdics de reciclatge. <br> <br>
             La relació amb els nostres clients es basa en tres pilars fonamentals: servei, confidencialitat i compromís professional.
           </p>
-          <ul class="lg:text-lg/6 text-brand-black-300 space-y-2 mt-4 ml-10">
+          <ul class="lg:text-lg/6 text-brand-black-300 space-y-2 mt-4 ml-6 lg:ml-10">
             <li class="flex items-center space-x-2">
               <span class="w-4 h-0.5 bg-brand-orange"></span>
               <p>The most advanced technical infrastructure</p>
@@ -213,10 +214,10 @@
               <p>Human talent in continuos training</p>
             </li>
           </ul>
-          <div class="relative w-[66rem] h-[37.25rem] mt-16 -ml-8">
+          <div class="relative sm:w-[66rem] h-44 md:h-96 xl:h-[37.25rem] mt-12 lg:mt-16 -mx-20 sm:-ml-4 lg:-ml-8">
             <img class="size-full object-cover" src="./img/factory-2.png" alt="">
-            <button type="button" class="absolute left-8 bottom-8 z-10">
-              <svg class="size-16" width="64" height="66" viewBox="0 0 64 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button type="button" class="absolute left-16 md:left-8 bottom-4 md:bottom-8 z-10">
+              <svg class="size-10 lg:size-16" width="64" height="66" viewBox="0 0 64 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 32C0 14.3269 14.3269 0 32 0V0C49.6731 0 64 14.3269 64 32V33.3334C64 51.0065 49.6731 65.3333 32 65.3333V65.3333C14.3269 65.3333 0 51.0064 0 33.3333V32Z" fill="white" fill-opacity="0.1"/>
                 <path d="M63.25 32V33.3334C63.25 50.5923 49.2589 64.5833 32 64.5833C14.7411 64.5833 0.75 50.5922 0.75 33.3333V32C0.75 14.7411 14.7411 0.75 32 0.75C49.2589 0.75 63.25 14.7411 63.25 32Z" stroke="white" stroke-opacity="0.4" stroke-width="1.5"/>
                 <path d="M28 41.3333L38.6667 33.3333Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -225,9 +226,9 @@
             </button>
           </div>
 
-          <div class="mt-16 space-y-4">
-            <h3 class="font-medium text-2xl">Matrix va ser fundada pel grup S&P a Ripoll el 1974 al cor dels Pirineus</h3>
-            <p class="text-lg text-brand-black-300">
+          <div class="mt-12 lg:mt-16 space-y-4">
+            <h3 class="font-medium text-xl lg:text-2xl">Matrix va ser fundada pel grup S&P a Ripoll el 1974 al cor dels Pirineus</h3>
+            <p class="lg:text-lg text-brand-black-300">
               Oferim als nostres clients solucions completes en funció de les seves necessitats,des de la fase de disseny de la peça a les proves finals de producción dins la mateixes instal·lacions. <br> <br>
               L'adaptació a una evolució tecnològica constant i la il·lusió dipositada en cada projecte ens ha permès assolir una posició competitiva en el mercat internacional. <br> <br>
               El potencial més important de la nostra empresa, són les persones que fan d'ella una realitat. El treballadors reben una sòlida formació continuada dins de l'empresa, amb cursos periòdics de reciclatge. <br> <br>
@@ -238,154 +239,161 @@
       </div>
     </section>
 
-    <section class="relative overflow-hidden bg-brand-gray-10">
-      <div class="picture">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="relative max-w-current w-full mx-auto px-4 h-full">
-              <div class="border-r border-brand-black-100/10">
-                <div class="relative h-[37.25rem] -ml-[100%] z-10">
-                  <img class="size-full object-cover" src="./img/lamp.png" alt="Lamp">
+    <section>
+      <div class="relative overflow-hidden bg-brand-gray-10">
+        <div class="picture">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="relative xl:max-w-current w-full mx-auto xl:px-4">
+                <div class="border-r border-brand-black-100/10">
+                  <div class="relative h-44 lg:h-96 xl:h-[37.25rem] xl:-ml-[100%] z-10">
+                    <img class="size-full object-cover" src="./img/lamp.png" alt="Lamp">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="relative xl:max-w-current w-full mx-auto xl:px-4">
+                <div class="border-r border-brand-black-100/10">
+                  <div class="relative h-44 lg:h-96 xl:h-[37.25rem] xl:-ml-[100%] z-10">
+                    <img class="size-full object-cover" src="./img/lamp.png" alt="Lamp">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="relative xl:max-w-current w-full mx-auto xl:px-4">
+                <div class="border-r border-brand-black-100/10">
+                  <div class="relative h-44 lg:h-96 xl:h-[37.25rem] xl:-ml-[100%] z-10">
+                    <img class="size-full object-cover" src="./img/lamp.png" alt="Lamp">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="relative xl:max-w-current w-full mx-auto xl:px-4">
+                <div class="border-r border-brand-black-100/10">
+                  <div class="relative h-44 lg:h-96 xl:h-[37.25rem] xl:-ml-[100%] z-10">
+                    <img class="size-full object-cover" src="./img/lamp.png" alt="Lamp">
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative max-w-current w-full mx-auto px-4 h-full">
-              <div class="border-r border-brand-black-100/10">
-                <div class="relative h-[37.25rem] -ml-[100%] z-10">
-                  <img class="size-full object-cover" src="./img/lamp.png" alt="Lamp">
-                </div>
-              </div>
-            </div>
+        </div>
+        <div class="absolute navigation-swiper w-full xl:w-auto right-0 top-1/2 -translate-y-1/2 xl:translate-y-0 xl:top-0 xl:h-full xl:flex flex-col items-start justify-between xl:bg-brand-gray-10 xl:pl-7 z-10">
+          <!-- swiper navigation -->
+          <div class="flex items-center justify-between space-x-3 lg:pb-4">
+            <!-- prev -->
+            <button type="button" class="picture-prev size-10 lg:size-12 flex items-center justify-center bg-brand-gray-10 shrink-0 disabled:cursor-not-allowed border border-brand-black-100/30 rounded-full">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23 12H1M1 12L6 17M1 12L6 7" stroke="#EA5B0C" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                  
+            </button>
+            <!-- next -->
+            <button type="button" class="picture-next size-10 lg:size-12 flex items-center justify-center bg-brand-gray-10 shrink-0 disabled:cursor-not-allowed border border-brand-black-100/30 rounded-full">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 12H23M23 12L18 17M23 12L18 7" stroke="#EA5B0C" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                                   
+            </button>
           </div>
-          <div class="swiper-slide">
-            <div class="relative max-w-current w-full mx-auto px-4 h-full">
-              <div class="border-r border-brand-black-100/10">
-                <div class="relative h-[37.25rem] -ml-[100%] z-10">
-                  <img class="size-full object-cover" src="./img/lamp.png" alt="Lamp">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="relative max-w-current w-full mx-auto px-4 h-full">
-              <div class="border-r border-brand-black-100/10">
-                <div class="relative h-[37.25rem] -ml-[100%] z-10">
-                  <img class="size-full object-cover" src="./img/lamp.png" alt="Lamp">
-                </div>
-              </div>
-            </div>
-          </div>
+          <p class="hidden xl:block relative max-w-64 font-ibm-plex-sans text-sm before:absolute before:top-0 before:left-0 before:h-0.5 before:w-4 before:bg-brand-orange pt-2">
+            Ullamcorper sed diam risus arcu auctor pulvinar. Auctor amet ipsum nisl nunc.
+          </p>
         </div>
       </div>
-      <div class="relative max-w-current w-full mx-auto px-4 h-full hidden">
-        <div class="border-r border-brand-black-100/10">
-          <div class="relative h-[37.25rem] -ml-[100%] z-10">
-            <img class="size-full object-cover" src="./img/lamp.png" alt="Lamp">
-          </div>
+      <div class="max-w-current mx-auto px-4 xl:hidden">
+        <div class="border-l md:border-x border-brand-black-100/10 pt-6 px-4">
+          <p class="relative font-ibm-plex-sans text-sm before:absolute before:top-0 before:left-0 before:h-0.5 before:w-4 before:bg-brand-orange pt-2">
+            Ullamcorper sed diam risus arcu auctor pulvinar. Auctor amet ipsum nisl nunc.
+          </p>
         </div>
-      </div>
-      <div class="absolute navigation-swiper right-0 top-0 h-full inline-flex flex-col items-start justify-between z-10 bg-brand-gray-10 pl-7">
-        <!-- swiper navigation -->
-        <div class="inline-flex items-center space-x-3 lg:pb-4">
-          <!-- prev -->
-          <button type="button" class="picture-prev size-10 lg:size-12 flex items-center justify-center shrink-0 disabled:cursor-not-allowed border border-brand-black-100/30 rounded-full">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M23 12H1M1 12L6 17M1 12L6 7" stroke="#EA5B0C" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>                  
-          </button>
-          <!-- next -->
-          <button type="button" class="picture-next size-10 lg:size-12 flex items-center justify-center shrink-0 disabled:cursor-not-allowed border border-brand-black-100/30 rounded-full">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 12H23M23 12L18 17M23 12L18 7" stroke="#EA5B0C" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>                                   
-          </button>
-        </div>
-        <p class="relative max-w-64 font-ibm-plex-sans text-sm before:absolute before:top-0 before:left-0 before:h-0.5 before:w-4 before:bg-brand-orange pt-2">
-          Ullamcorper sed diam risus arcu auctor pulvinar. Auctor amet ipsum nisl nunc.
-        </p>
       </div>
     </section>
 
     <section class="overflow-hidden">
       <div class="max-w-current w-full mx-auto px-4">
-        <div class="border-x border-brand-black-100/10 space-y-16 pt-14 pb-16 pl-6 pr-10">
-          <p class="text-lg text-brand-black-300">
+        <div class="border-l md:border-x border-brand-black-100/10 space-y-16 pt-12 lg:pt-14 pb-16 px-4 md:px-6 xl:pr-10">
+          <p class="lg:text-lg text-brand-black-300">
             Matrix compta amb unes instal·lacions totalment climatitzades de 4.300m2, 105,000 hores de capacitat de treball per any, dedicada al disseny i fabricació de motlles d'injecció d'alta precisió i matrius de premsa, i compta amb una plantilla de 65 treballadors. <br> <br>
             El nostre know how i experiència en els últims 40 anys ens permeten oferir als nostres clients els projectes més complexos i les solucions òptimes utilitzant la més avançada tecnologia integrada en CAD / CAM / CAE.
           </p>
           
           <div class="space-y-8">
-            <div class="flex items-start gap-4 border-b border-brand-black-100/10 pb-8">
-              <div class="w-20">
+            <div class="flex flex-wrap sm:flex-nowrap items-start gap-4 border-b border-brand-black-100/10 pb-8">
+              <div class="w-20 shrink-0">
                 <img class="size-full object-cover" src="./img/iqnet.png" alt="">
               </div>
-              <div class="space-y-2">
-                <h3 class="font-medium text-2xl">QNET ISO 9001:2015</h3>
-                <p class="font-ibm-plex-sans text-sm">PDF - 10Mb</p>
+              <div class="flex-1 flex flex-col sm:flex-row items-start justify-between gap-4">
+                <div class="space-y-2">
+                  <h3 class="font-medium text-xl lg:text-2xl">QNET ISO 9001:2015</h3>
+                  <p class="font-ibm-plex-sans text-sm">PDF - 10Mb</p>
+                </div>
+                <button type="button" class="font-medium text-sm lg:text-base/4 border border-brand-black-100/30 hover:border-brand-orange hover:text-brand-orange transition-colors rounded-full py-2 md:py-3 px-5 md:px-10 sm:ml-auto">
+                  Descarregar
+                </button>
               </div>
-              <button type="button" class="font-medium border border-brand-black-100/30 hover:border-brand-orange hover:text-brand-orange transition-colors rounded-full py-3 px-10 ml-auto">
-                Descarregar
-              </button>
             </div>
-            <div class="flex items-start gap-4 border-b border-brand-black-100/10 pb-8">
-              <div class="w-20">
+            <div class="flex flex-wrap sm:flex-nowrap items-start gap-4 border-b border-brand-black-100/10 pb-8">
+              <div class="w-20 shrink-0">
                 <img class="size-full object-cover" src="./img/aenor.png" alt="">
               </div>
-              <div class="space-y-2">
-                <h3 class="font-medium text-2xl">AENOR ISO 9001:2015</h3>
-                <p class="font-ibm-plex-sans text-sm">PDF - 10Mb</p>
+              <div class="flex-1 flex flex-col sm:flex-row items-start justify-between gap-4">
+                <div class="space-y-2">
+                  <h3 class="font-medium text-xl lg:text-2xl">AENOR ISO 9001:2015</h3>
+                  <p class="font-ibm-plex-sans text-sm">PDF - 10Mb</p>
+                </div>
+                <button type="button" class="font-medium text-sm lg:text-base/4 border border-brand-black-100/30 hover:border-brand-orange hover:text-brand-orange transition-colors rounded-full py-2 md:py-3 px-5 md:px-10 sm:ml-auto">
+                  Descarregar
+                </button>
               </div>
-              <button type="button" class="font-medium border border-brand-black-100/30 hover:border-brand-orange hover:text-brand-orange transition-colors rounded-full py-3 px-10 ml-auto">
-                Descarregar
-              </button>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Cronologies -->
-    <section class="bg-white py-28">
+    <section class="bg-white pt-16 lg:py-28">
       <div class="max-w-xxl mx-auto px-4">
-        <h2 class="text-7xl text-center">Cronologies</h2>
-        <div class="relative grid grid-cols-2 after:absolute after:w-px after:bg-brand-black-100/10 after:inset-y-0 after:left-1/2 after:-translate-x-1/2 after:z-0 gap-y-60 mt-20 px-16">
-          <div class="relative h-96 pb-28 pl-14 mr-28">
+        <h2 class="text-display-3xl lg:text-5xl xl:text-7xl text-center">Cronologies</h2>
+        <div class="relative grid md:grid-cols-2 after:absolute after:w-px after:bg-brand-black-100/10 after:inset-y-0 after:left-4 md:after:left-1/2 after:-translate-x-1/2 after:z-0 gap-y-8 lg:gap-y-16 xl:gap-y-60 mt-14 lg:mt-20 px-4 lg:px-16 pb-16 lg:pb-0">
+          <div class="order-2 md:order-none relative h-40 md:h-96 pb-10 md:pb-16 xl:pb-28 pl-8 lg:pl-14 ml-12 md:ml-0 md:mr-12 lg:mr-16 xl:mr-28">
             <img class="size-full object-cover" src="./img/master.png" alt="">
-            <div class="w-52 absolute bottom-0 left-0">
+            <div class="w-24 md:w-52 absolute bottom-0 left-0">
               <img class="size-full object-cover" src="./img/hospital.png" alt="">
             </div>
           </div>
-          <div class="relative before:absolute before:top-0 before:left-0 before:h-72 before:w-px before:bg-brand-orange pr-12 pt-3.5 z-10">
+          <div class="order-1 md:order-none relative before:absolute before:top-0 before:left-0 before:h-72 before:w-px before:bg-brand-orange md:pr-12 pt-3.5 z-10">
             <div class="flex items-center -ml-1.5">
               <div class="flex items-center">
                 <span class="size-3 bg-brand-orange rounded-full"></span>
                 <span class="w-10 h-0.5 bg-brand-orange"></span>
               </div>                 
-              <p class="inline-block font-ibm-plex-sans text-sm/4 text-white bg-brand-orange rounded-lg px-2 py-1.5">
+              <p class="inline-block font-ibm-plex-sans text-xs md:text-sm/4 text-white bg-brand-orange rounded-lg px-2 py-1.5">
                 12/01/1974
               </p>
             </div>
             <div class="space-y-2 pl-10 mt-6">
-              <h3 class="font-medium text-2xl">Tristique sed non neque ac eget sagittis volutpat scelerisqua tellus posuere</h3>
-              <p class="text-lg leading-normal text-brand-black-300">
+              <h3 class="font-medium text-xl lg:text-2xl">Tristique sed non neque ac eget sagittis volutpat scelerisqua tellus posuere</h3>
+              <p class="lg:text-lg leading-normal text-brand-black-300">
                 En 1974, en el centro urbano de Ripoll, nace Matrix SA. La nueva compañía es una iniciativa de los industriales ripolleses Eduard Soler y Josep Palau, que desde 1971 gestaban la creación de un taller de utillajes que proveyera a la empresa S&P de matrices de estampación metálica y moldes de inyección de plástico y aluminio.
               </p>
             </div>
           </div>
-          <div class="relative text-right z-10">
-            <div class="flex justify-end items-center -mr-1.5">               
-              <p class="inline-block font-ibm-plex-sans text-sm/4 text-brand-black-200 bg-brand-gray-10-100 rounded-lg px-2 py-1.5">
+          <div class="order-3 md:order-none relative md:text-right z-10 pt-14 md:pt-0">
+            <div class="flex md:justify-end items-center -ml-1.5 md:ml-0 md:-mr-1.5">               
+              <p class="order-2 md:order-none inline-block font-ibm-plex-sans text-xs md:text-sm/4 text-brand-black-200 bg-brand-gray-100 rounded-lg px-2 py-1.5">
                 23/12/1980
               </p>
-              <div class="flex items-center">
-                <span class="w-10 h-0.5 bg-brand-gray-10-100"></span>
-                <span class="size-3 rounded-full bg-brand-gray-10-100"></span>
+              <div class="order-1 md:order-none flex items-center">
+                <span class="order-last md:order-none w-10 h-0.5 bg-brand-gray-100"></span>
+                <span class="size-3 rounded-full bg-brand-gray-100"></span>
               </div>            
             </div>
-            <div class="space-y-2 pl-10 mt-6 pr-12">
-              <h3 class="font-medium text-2xl">Tristique sed non neque ac eget sagittis volutpat scelerisqua tellus posuere</h3>
-              <p class="text-lg leading-normal text-brand-black-300">
+            <div class="space-y-2 xl:pl-10 pl-12 md:pl-0 md:pr-12 mt-6">
+              <h3 class="font-medium text-xl lg:text-2xl">Tristique sed non neque ac eget sagittis volutpat scelerisqua tellus posuere</h3>
+              <p class="lg:text-lg leading-normal text-brand-black-300">
                 En 1974, en el centro urbano de Ripoll, nace Matrix SA. La nueva compañía es una iniciativa de los industriales ripolleses Eduard Soler y Josep Palau, que desde 1971 gestaban la creación de un taller de utillajes que proveyera a la empresa S&P de matrices de estampación metálica y moldes de inyección de plástico y aluminio.
               </p>
             </div>
@@ -507,7 +515,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="app.js"></script>  
 </body>
 </html>

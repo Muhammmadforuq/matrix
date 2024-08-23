@@ -50,7 +50,7 @@
 }
 
 .navigation-swiper{
-  @apply pr-4
+  @apply px-4 xl:pr-4
 }
 
 
