@@ -31,6 +31,24 @@ document.querySelectorAll('.toggleMenu').forEach((btn)=>{
     }
   });
 
+  const accordionBtn = document.querySelectorAll('.filterAccordionBtn');
+
+  accordionBtn.forEach((activeBtn, i)=>{
+    if(activeBtn){
+      activeBtn.addEventListener("click", ()=>{
+        let activeContent = activeBtn.parentElement.nextElementSibling;
+        activeBtn.firstElementChild.classList.toggle("rotate-180");
+        activeContent.classList.toggle("active-btn");
+
+        if(activeContent.classList.contains("active-btn")){
+          activeContent.style.height = activeContent.scrollHeight + "px"
+        } else{
+          activeContent.style.height = "0"
+        }
+      })
+    }
+  })
+
 
 
   const services = new Swiper(".services", {
