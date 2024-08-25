@@ -31,13 +31,13 @@ document.querySelectorAll('.toggleMenu').forEach((btn)=>{
     }
   });
 
-  const accordionBtn = document.querySelectorAll('.filterAccordionBtn');
+  const accordionBtn = document.querySelectorAll('.accordionBtn');
 
   accordionBtn.forEach((activeBtn, i)=>{
     if(activeBtn){
       activeBtn.addEventListener("click", ()=>{
         let activeContent = activeBtn.parentElement.nextElementSibling;
-        activeBtn.firstElementChild.classList.toggle("rotate-180");
+        activeBtn.querySelector('.svg').classList.toggle("rotate-180");
         activeContent.classList.toggle("active-btn");
 
         if(activeContent.classList.contains("active-btn")){
