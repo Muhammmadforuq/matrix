@@ -4,11 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
-  <title>Matrix || Esdeveniments</title>
+  <title>Matrix || User</title>
 </head>
 <body>
-   
-  <header class="relative z-20 hidden">
+  <header class="relative z-20">
     <nav class="max-w-xxl mx-auto flex items-center justify-between p-6 lg:px-4 xl:pt-8 gap-6 xl:gap-10">
       <a href="#" class="w-32 xl:w-auto lg:pb-4">
         <img src="./img/logo.svg" alt="logo">
@@ -175,132 +174,124 @@
   </header>
 
   <main>
-    <section class="overflow-hidden hidden">
-      <div class="max-w-xxl mx-auto px-4 lg:mt-14">
-          <div class="menu-border relative flex items-center font-ibm-plex-sans text-xs md:text-sm uppercase space-x-1.5 py-4 md:py-5">
-              <span class="size-2 md:size-2.5 shrink-0 bg-brand-orange rounded-full"></span>
-              <a href="#">Recursos</a>
+    <section class="overflow-hidden">
+      <div class="relative max-w-xxl mx-auto lg:pt-8 px-4 lg:mt-14">
+          <div class="menu-border relative flex-col flex lg:flex-row lg:items-center font-ibm-plex-sans text-xs md:text-sm uppercase gap-1 lg:gap-6 py-4 md:py-5">
+              <div class="flex items-center space-x-1.5">
+                <span class="size-2 md:size-2.5 shrink-0 bg-brand-orange rounded-full"></span>
+                <a href="#">Qui som</a>
+              </div>
           </div>
-          <h1 class="text-display-3xl lg:text-6xl xl:text-8xl mt-8">Esdeveniments</h1>
+          <h1 class="text-display-3xl lg:text-6xl xl:text-8xl mt-4 lg:mt-8">On som i contacte</h1>
       </div>      
     </section>
 
-    <section>
-      <div class="max-w-xxl mx-auto px-4 mt-20">
-        <div class="grid lg:grid-cols-5 gap-4">
-          <div class="hidden lg:block"></div>
-
-          <div class="lg:col-span-4 border-l border-brand-black-100/10 space-y-8 px-4 lg:pl-4 pb-28">
-      
-            <div class="flex flex-col md:flex-row md:items-start border-b border-brand-black-100/10 pb-8 gap-8 md:gap-4 lg:gap-8">
-              <div class="w-28 lg:w-44 shrink-0">
-                <p class="relative font-ibm-plex-sans text-sm text-brand-black-300 after:absolute after:top-0 after:left-0 after:w-4 after:h-0.5 after:bg-brand-orange pt-2.5">07/04/2024</p>
-                <h4 class="font-bold text-xs text-brand-orange uppercase mt-1">esdeveniments</h4>
-              </div>
-              <div class="max-w-[40rem] space-y-2">
-                <h4 class="font-medium text-xl lg:text-2xl">
-                  Tristique sed non neque ac eget sagittis volutpat scelerisqua tellus posuere</h4>
-                <p class="lg:text-lg text-brand-black-300">
-                  Matrix compta amb unes instal·lacions totalment climatitzades de 4.300m2, 105,000 hores de capacitat de treball per any...
-                </p>
-              </div>
-              <div class="h-44 md:h-auto md:w-32 lg:w-48 shrink-0">
-                <!-- <img class="size-full object-cover" src="./img/ad-1.png" alt=""> -->
+    <section class="mt-8 lg:mt-20">
+      <div class="h-56 lg:h-80 xl:h-[30rem]">
+        <img class="size-full object-cover" src="./img/factory-user.png" alt="">
+      </div>
+      <div class="max-w-xxl mx-auto px-4">
+        <div class="grid md:grid-cols-3 border-x border-brand-black-100/10 md:border-none md:divide-x divide-brand-black-100/10 gap-y-12 pt-12 pb-16 md:py-0">
+          <div class="space-y-8 px-4 md:pr-4 lg:pr-8 md:pt-16 md:pb-24 xl:pb-36">
+            <div class="max-w-72 text-lg space-y-1">
+              <h4 class="font-bold text-xl">Matrix SA</h4>
+              <p class="text-brand-black-300">Ctra. C-26, km 195 <br>  17500 Ripoll (Girona)</p>
+            </div>
+            <!-- gps -->
+            <div class="max-w-72 space-y-1">
+              <h4 class="font-bold text-xs uppercase">gps:</h4>
+              <p class="text-brand-black-300">42º 13' 7.74" N - 2º 12' 42.80" E</p>
+            </div>
+            <!-- telfon -->
+            <div class="max-w-72 space-y-1">
+              <h4 class="font-bold text-xs uppercase">Telèfon:</h4>
+              <p class="text-brand-black-300">T. (+34) 972 70 03 58</p>
+              <p class="text-brand-black-300">F. (+34) 972 70 33 51</p>
+            </div>
+            <!-- mail -->
+            <div class="max-w-72 space-y-1">
+              <h4 class="font-bold text-xs uppercase">Mail:</h4>
+              <a href="#" class="inline-block border-b border-brand-orange hover:text-brand-orange hover:translate-x-1 transition-all"><b>info@matrix-sa.com</b></a>
+            </div>
+            <div class="max-w-72 space-y-1">
+              <h4 class="font-bold text-xs uppercase">Segueix-nos:</h4>
+              <div class="flex items-center space-x-2">
+                <!-- instagram -->
+                <a href="#" class="size-14 flex hover:bg-brand-orange hover:text-white border border-brand-black-100/30 hover:border-brand-orange transition-colors rounded-full shrink-0">
+                  <svg class="m-auto" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.4466 7.23649C9.87448 7.15165 9.29012 7.24938 8.7767 7.51578C8.26327 7.78219 7.84692 8.20371 7.58687 8.72038C7.32682 9.23705 7.2363 9.82256 7.32819 10.3936C7.42009 10.9647 7.68971 11.4923 8.09872 11.9013C8.50773 12.3103 9.03529 12.5799 9.60637 12.6718C10.1775 12.7637 10.763 12.6732 11.2796 12.4131C11.7963 12.1531 12.2178 11.7367 12.4842 11.2233C12.7506 10.7099 12.8484 10.1255 12.7635 9.55337C12.677 8.96973 12.405 8.42941 11.9878 8.0122C11.5706 7.595 11.0303 7.32304 10.4466 7.23649Z" fill="currentColor"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0H5C2.23858 0 0 2.23858 0 5V15C0 17.7614 2.23858 20 5 20H15C17.7614 20 20 17.7614 20 15V5C20 2.23858 17.7614 0 15 0ZM7.62527 5.29673C8.60544 4.78813 9.72103 4.60156 10.8134 4.76353C11.9276 4.92876 12.9591 5.44796 13.7556 6.24444C14.5521 7.04092 15.0713 8.07245 15.2365 9.18666C15.3985 10.279 15.2119 11.3946 14.7033 12.3747C14.1947 13.3549 13.39 14.1498 12.4036 14.6462C11.4172 15.1427 10.2994 15.3155 9.2092 15.1401C8.11895 14.9646 7.11179 14.4499 6.33096 13.6691C5.55012 12.8882 5.03538 11.8811 4.85994 10.7908C4.68451 9.70057 4.85731 8.58277 5.35378 7.5964C5.85025 6.61003 6.6451 5.80532 7.62527 5.29673ZM15.5 3.25009C14.8096 3.25009 14.25 3.80973 14.25 4.50009C14.25 5.19044 14.8096 5.75009 15.5 5.75009H15.5125C16.2029 5.75009 16.7625 5.19044 16.7625 4.50009C16.7625 3.80973 16.2029 3.25009 15.5125 3.25009H15.5Z" fill="currentColor"/>
+                    </svg>                    
+                </a>
+                <!-- linkedin -->
+                <a href="#" class="size-14 flex hover:bg-brand-orange hover:text-white border border-brand-black-100/30 hover:border-brand-orange transition-colors rounded-full shrink-0">
+                  <svg class="m-auto" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.4039 16.6671H13.5513V12.1277C13.5513 11.0453 13.5323 9.65185 12.0676 9.65185C10.5819 9.65185 10.3546 10.8312 10.3546 12.0489V16.6668H7.50201V7.33207H10.2405V8.60775H10.2788C10.5529 8.13161 10.9489 7.73991 11.4247 7.47438C11.9005 7.20884 12.4383 7.07942 12.9808 7.09988C15.872 7.09988 16.405 9.03227 16.405 11.5462L16.4039 16.6671ZM4.28334 6.05608C3.95593 6.05614 3.63586 5.95754 3.3636 5.77276C3.09134 5.58798 2.87912 5.32531 2.75377 5.01797C2.62843 4.71064 2.59558 4.37243 2.6594 4.04612C2.72322 3.71982 2.88082 3.42007 3.11229 3.18478C3.34376 2.94949 3.6387 2.78924 3.9598 2.72427C4.2809 2.65931 4.61375 2.69256 4.91626 2.81982C5.21876 2.94708 5.47734 3.16263 5.65928 3.43922C5.84123 3.7158 5.93837 4.041 5.93843 4.37368C5.93847 4.59458 5.8957 4.81332 5.81254 5.01742C5.72938 5.22151 5.60748 5.40697 5.45379 5.56319C5.3001 5.71942 5.11763 5.84335 4.91681 5.92792C4.71598 6.01249 4.50073 6.05604 4.28334 6.05608ZM5.70963 16.6671H2.85407V7.33207H5.70963V16.6671ZM17.826 0.000125561H1.42065C1.04829 -0.00414424 0.689499 0.141974 0.423113 0.406372C0.156728 0.670769 0.00454439 1.03182 0 1.41017V18.1493C0.00438885 18.5278 0.156479 18.8891 0.422856 19.1538C0.689233 19.4184 1.04811 19.5648 1.42065 19.5608H17.826C18.1993 19.5656 18.5592 19.4196 18.8266 19.1549C19.094 18.8903 19.2471 18.5286 19.2523 18.1493V1.40896C19.247 1.02986 19.0938 0.668402 18.8263 0.40401C18.5589 0.139619 18.1991 -0.0048744 17.826 0.000125561Z" fill="currentColor"/>
+                    </svg>
+                                       
+                </a>
+                <!-- you tube -->
+                <a href="#" class="size-14 flex hover:bg-brand-orange hover:text-white border border-brand-black-100/30 hover:border-brand-orange transition-colors rounded-full shrink-0">
+                  <svg class="m-auto" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.5821 2.7003C19.3521 1.83421 18.6744 1.15211 17.8139 0.920629C16.2542 0.5 10 0.5 10 0.5C10 0.5 3.74586 0.5 2.18613 0.920629C1.32565 1.15215 0.647936 1.83421 0.417919 2.7003C0 4.27014 0 7.54545 0 7.54545C0 7.54545 0 10.8208 0.417919 12.3906C0.647936 13.2567 1.32565 13.9104 2.18613 14.1419C3.74586 14.5625 10 14.5625 10 14.5625C10 14.5625 16.2541 14.5625 17.8139 14.1419C18.6744 13.9104 19.3521 13.2567 19.5821 12.3906C20 10.8208 20 7.54545 20 7.54545C20 7.54545 20 4.27014 19.5821 2.7003V2.7003ZM7.95453 10.5192V4.57171L13.1818 7.54552L7.95453 10.5192Z" fill="currentColor"/>
+                    </svg>                        
+                </a>
               </div>
             </div>
-            <div class="flex flex-col md:flex-row md:items-start border-b border-brand-black-100/10 pb-8 gap-8 md:gap-4 lg:gap-8">
-              <div class="w-28 lg:w-44 shrink-0">
-                <p class="relative font-ibm-plex-sans text-sm text-brand-black-300 after:absolute after:top-0 after:left-0 after:w-4 after:h-0.5 after:bg-brand-orange pt-2.5">07/04/2024</p>
-                <h4 class="font-bold text-xs text-brand-orange uppercase mt-1">esdeveniments</h4>
-              </div>
-              <div class="max-w-[40rem] space-y-2">
-                <h4 class="font-medium text-xl lg:text-2xl">Cursus pellentesque at pellentesque proin justo</h4>
-                <p class="lg:text-lg text-brand-black-300">
-                  Matrix compta amb unes instal·lacions totalment climatitzades de 4.300m2, 105,000 hores de capacitat de treball per any...
-                </p>
-              </div>
-              <div class="h-44 md:h-auto md:w-32 lg:w-48 shrink-0">
-                <!-- <img class="size-full object-cover" src="./img/ad-1.png" alt=""> -->
+          </div>
+          <div class="space-y-6 px-4 lg:px-8 md:pt-16 md:pb-24 xl:pb-36">
+            <h4 class="relative font-bold text-xl after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-4 after:bg-brand-orange pb-2">Contacte <br> Divisió Motlles</h4>
+            <div>
+              <div class="size-20 shrink-0 rounded-full overflow-hidden mt-2">
+                <img class="size-full object-cover" src="./img/kal.png" alt="">
               </div>
             </div>
-            <div class="flex flex-col md:flex-row md:items-start border-b border-brand-black-100/10 pb-8 gap-8 md:gap-4 lg:gap-8">
-              <div class="w-28 lg:w-44 shrink-0">
-                <p class="relative font-ibm-plex-sans text-sm text-brand-black-300 after:absolute after:top-0 after:left-0 after:w-4 after:h-0.5 after:bg-brand-orange pt-2.5">07/04/2024</p>
-                <h4 class="font-bold text-xs text-brand-orange uppercase mt-1">esdeveniments</h4>
-              </div>
-              <div class="max-w-[40rem] space-y-2">
-                <h4 class="font-medium text-xl lg:text-2xl">Cursus pellentesque at pellentesque proin justo</h4>
-                <p class="lg:text-lg text-brand-black-300">
-                  Matrix compta amb unes instal·lacions totalment climatitzades de 4.300m2, 105,000 hores de capacitat de treball per any...
-                </p>
-              </div>
-              <div class="h-44 md:h-auto md:w-32 lg:w-48 shrink-0">
-                <img class="size-full object-cover" src="./img/ad-1.png" alt="">
+            <div class="max-w-72 space-y-1">
+              <h4 class="font-bold text-xl">Lino Sessa</h4>
+              <p class="text-brand-black-300">Sales Manager.<br>Moulding Solutions </p>
+            </div>
+            <!-- telfon -->
+            <div class="max-w-72 space-y-1">
+              <h4 class="font-bold text-xs uppercase">Telèfon:</h4>
+              <p class="text-brand-black-300">T. (+34) 972 70 03 58</p>
+            </div>
+             <!-- mail -->
+             <div class="max-w-72 space-y-1">
+              <h4 class="font-bold text-xs uppercase">Mail:</h4>
+              <a href="#" class="inline-block border-b border-brand-orange hover:text-brand-orange hover:translate-x-1 transition-all">
+                <b>bsessa@matrix-sa.com</b>
+              </a>
+            </div>
+          </div>
+          <div class="space-y-6 px-4 md:pl-4 lg:pl-8 md:pt-16 md:pb-24 xl:pb-36">
+            <h4 class="relative font-bold text-xl after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-4 after:bg-brand-orange pb-2">Contacte <br> Divisió Matrius</h4>
+            <div>
+              <div class="size-20 shrink-0 rounded-full overflow-hidden mt-2">
+                <!-- <img class="size-full object-cover" src="./img/kal.png" alt=""> -->
               </div>
             </div>
-            <div class="flex flex-col md:flex-row md:items-start border-b border-brand-black-100/10 pb-8 gap-8 md:gap-4 lg:gap-8">
-              <div class="w-28 lg:w-44 shrink-0">
-                <p class="relative font-ibm-plex-sans text-sm text-brand-black-300 after:absolute after:top-0 after:left-0 after:w-4 after:h-0.5 after:bg-brand-orange pt-2.5">11/03/2024</p>
-                <h4 class="font-bold text-xs text-brand-orange uppercase mt-1">esdeveniments</h4>
-              </div>
-              <div class="max-w-[40rem] space-y-2">
-                <h4 class="font-medium text-xl lg:text-2xl">Viverra tellus mi posuere nullamac nam odio auctor</h4>
-                <p class="lg:text-lg text-brand-black-300">
-                  Matrix compta amb unes instal·lacions totalment climatitzades de 4.300m2, 105,000 hores de capacitat de treball per any...
-                </p>
-              </div>
-              <div class="h-44 md:h-auto md:w-32 lg:w-48 shrink-0">
-                <img class="size-full object-cover" src="./img/ad-2.png" alt="">
-              </div>
+            <div class="space-y-1">
+              <h4 class="font-bold text-xl">Pablo Marqués</h4>
+              <p class="text-brand-black-300">Technical and Commercial Manager.<br>Dies & Tools Division</p>
             </div>
-            <div class="flex flex-col md:flex-row md:items-start border-b border-brand-black-100/10 pb-8 gap-8 md:gap-4 lg:gap-8">
-              <div class="w-28 lg:w-44 shrink-0">
-                <p class="relative font-ibm-plex-sans text-sm text-brand-black-300 after:absolute after:top-0 after:left-0 after:w-4 after:h-0.5 after:bg-brand-orange pt-2.5">31/01/2024</p>
-                <h4 class="font-bold text-xs text-brand-orange uppercase mt-1">esdeveniments</h4>
-              </div>
-              <div class="max-w-[40rem] space-y-2">
-                <h4 class="font-medium text-xl lg:text-2xl">Cursus pellentesque at pellentesque proin justo</h4>
-                <p class="lg:text-lg text-brand-black-300">
-                  Matrix compta amb unes instal·lacions totalment climatitzades de 4.300m2, 105,000 hores de capacitat de treball per any...
-                </p>
-              </div>
-              <div class="h-44 md:h-auto md:w-32 lg:w-48 shrink-0">
-                <img class="size-full object-cover" src="./img/ad-3.png" alt="">
-              </div>
+            <!-- telfon -->
+            <div class="max-w-72 space-y-1">
+              <h4 class="font-bold text-xs uppercase">Telèfon:</h4>
+              <p class="text-brand-black-300">T. (+34) 972 70 03 58</p>
             </div>
-            <!-- pagination -->
-            <div class="flex items-center justify-center gap-8 mt-16">
-              <!-- prev -->
-              <button type="button" class="size-12 flex items-center justify-center text-brand-black-200/30 hover:text-brand-orange border border-brand-black-100/30 transition-colors rounded-full">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M23 12H1H23Z" fill="currentColor" fill-opacity="0.3"/>
-                  <path d="M6 17L1 12L6 17Z" fill="currentColor" fill-opacity="0.3"/>
-                  <path d="M6 7L1 12L6 7Z" fill="currentColor" fill-opacity="0.3"/>
-                  <path d="M23 12H1M1 12L6 17M1 12L6 7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>                  
-              </button>
-              <div class="flex items-center text-center text-lg divide-x divide-brand-black-100/30">
-                <button type="button" class="w-10 font-semibold">1</button>
-                <button type="button" class="w-10">2</button>
-                <button type="button" class="w-10">3</button>
-              </div>
-              <!-- next -->
-              <button type="button" class="size-12 flex items-center justify-center border border-brand-black-100/30 rounded-full">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 12H23H1Z" fill="#EA5B0C"/>
-                  <path d="M18 17L23 12L18 17Z" fill="#EA5B0C"/>
-                  <path d="M18 7L23 12L18 7Z" fill="#EA5B0C"/>
-                  <path d="M1 12H23M23 12L18 17M23 12L18 7" stroke="#EA5B0C" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>                                    
-              </button>
+             <!-- mail -->
+             <div class="max-w-72 space-y-1">
+              <h4 class="font-bold text-xs uppercase">Mail:</h4>
+              <a href="#" class="inline-block border-b border-brand-orange hover:text-brand-orange hover:translate-x-1 transition-all">
+                <b>pmarques@matrix-sa.com</b>
+              </a>
             </div>
           </div>
         </div>
-      </div>
+      </div> 
     </section>
-          
     <!-- Volutpat sit donec mattis  sit lorem nascetur nulla -->
-    <section class="relative hidden">
+    <section class="relative">
       <div class="relative max-w-xxl mx-auto text-white px-6 md:px-4 py-24 lg:pt-40 lg:pb-20 space-y-6 z-10">
         <h3 class="md:max-w-2xl text-3xl lg:text-5xl lg:pr-28">Volutpat sit donec mattis  sit lorem nascetur nulla</h3>
         <a href="#" class="group inline-flex items-center font-medium text-sm md:text-base/none border border-white/40 hover:border-white active:text-brand-orange transition-colors rounded-full space-x-2 px-9 lg:px-12 py-3">
@@ -316,7 +307,7 @@
     </section>
   </main>
 
-  <footer class="bg-brand-black-100 text-white hidden">
+  <footer class="bg-brand-black-100 text-white">
     <div class="max-w-xxl mx-auto grid md:grid-cols-3 gap-y-12 gap-8 px-6 md:px-4 pt-16 pb-12 lg:py-24">
       <div class="space-y-6">
         <a href="#" class="inline-block w-52 lg:w-auto">
