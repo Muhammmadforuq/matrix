@@ -48,7 +48,15 @@ document.querySelectorAll('.toggleMenu').forEach((btn)=>{
       })
     }
   })
-
+  const languages = document.querySelectorAll('.change-languages > button');
+  // const activeLangiage = document.querySelector('.active-language')
+  languages.forEach((option, i)=>{
+    if(option){
+      option.addEventListener("click", ()=>{
+        document.querySelector('.active-language').innerHTML = option.innerHTML 
+      })
+    }
+  })
 
 
   const services = new Swiper(".services", {
@@ -79,3 +87,4 @@ document.querySelectorAll('.toggleMenu').forEach((btn)=>{
       prevEl: ".picture-prev",
     },
   });
+  
