@@ -49,14 +49,17 @@ document.querySelectorAll('.toggleMenu').forEach((btn)=>{
     }
   })
   const languages = document.querySelectorAll('.change-languages > button');
-  // const activeLangiage = document.querySelector('.active-language')
-  languages.forEach((option, i)=>{
-    if(option){
-      option.addEventListener("click", ()=>{
-        document.querySelector('.active-language').innerHTML = option.innerHTML 
-      })
+  languages.forEach((option, i) => {
+    if(option) {
+      option.addEventListener("click", () => {
+        const activelanguage = option.parentElement.parentElement.parentElement.previousElementSibling.children[1]
+        if (activelanguage) {
+          activelanguage.innerHTML = option.innerHTML;
+        }
+      });
     }
-  })
+  });
+  
 
 
   const services = new Swiper(".services", {
