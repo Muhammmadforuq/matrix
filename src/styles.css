@@ -53,11 +53,16 @@
   @apply px-4 xl:pr-4
 }
 
-
+.text-ipsum{
+  @apply max-w-64
+}
 
 @media only screen and (min-width: 1440px) {
   .navigation-swiper{
     @apply pr-20
+  }
+  .text-ipsum{
+    @apply max-w-72
   }
 }
 
